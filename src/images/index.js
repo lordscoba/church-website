@@ -1,0 +1,14 @@
+export { default as ellipseOrange } from "./ellipseOrange.svg";
+export { default as ellipsePurple } from "./ellipsePurple.svg";
+export { default as ellipseRed } from "./ellipseRed.svg";
+export { default as kindHearted } from "./kindHearted.svg";
+export { default as prayerManBending } from "./prayerManBending.svg";
+export { default as prayerManStanding } from "./prayingManStanding.svg";
+export { default as singer } from "./singer.svg";
+export { default as slider } from "./slider.svg";
+export { default as viewAll } from "./viewAll.svg";
+export { default as manEyeGlass } from "./manEyeGlass.svg";
+export { default as foursquareLogo } from "./foursquare-logo.svg";
+export { default as pastor } from "./pastor.png";
+export { default as slider2 } from "./slider2.png";
+export { default as map } from "./map.png";
