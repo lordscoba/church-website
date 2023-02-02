@@ -6,8 +6,8 @@ const ReachUs = () => {
   return (
     <section className="text-white" style={{ backgroundColor: "#272727" }}>
       <div className="row p-5">
-        <div className="col-12 col-lg-6 vstack p-5">
-          <h1 className="mb-5">Reach Us</h1>
+        <div className="col-12 col-lg-6 vstack p-1">
+          <h1 className="mb-2">Reach Us</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
             adipiscing netus sapien enim etiam sit. Proin dui augue mattis
@@ -15,7 +15,7 @@ const ReachUs = () => {
             ullamcorper. Bibendum at vitae tristique viverra massa
           </p>
         </div>
-        <div className="col-12 col-lg-6 p-5">
+        <div className="col-12 col-lg-6 p-1">
           <Form>
             <div className="row">
               <div className="col-6">
@@ -83,7 +83,7 @@ const ReachUs = () => {
         </div>
       </div>
       <div className="row p-5">
-        <div className="col-12 col-lg-6 p-5">
+        <div className="col-12 col-lg-6">
           <div className="mb-5">
             <h6>CALL US</h6>
             <p>
@@ -103,7 +103,7 @@ const ReachUs = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-6 p-5">
+        <div className="col-12 col-lg-6">
           <img className="img-fluid rounded-4" src={map} alt="" />
         </div>
       </div>

@@ -2,9 +2,9 @@ import React from "react";
 
 export const Members = () => {
   return (
-    <section className="m-1 p-5">
+    <section className="m-1">
       <div className="row g-3">
-        <div className="col">
+        <div className="col-12 col-lg-6">
           <div className="p-4" style={{ height: "11.5rem" }}>
             <div
               className="text-white rounded-4 p-4"
@@ -64,7 +64,7 @@ export const Members = () => {
             </p>
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-lg-6">
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Become a member</h3>

@@ -4,31 +4,21 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Welcome = () => {
-  // const welcomeRef = useRef(null);
-
-  // useEffect(() => {
-  //   const item = document.querySelector(".welcome");
-
-  //   console.log(item.clientTop);
-  // }, []);
   return (
-    <section className="welcome">
+    <section className="text-white">
       <Container>
-        <Row>
-          <Col className="p-5">
-            <div className="mb-5">
+        <Row style={{ height: "500px" }} className="p-3 align-items-end">
+          <Col className="col-9 col-lg-6">
+            <div className="">
               <div
-                className="fs-1 text-white fst-italic lh-1 mb-5"
+                className="display-3 fst-italic lh-1 mb-4"
                 style={{ fontFamily: "recia" }}
               >
                 Welcome to <br />
                 Foursquare Gospel <br />
                 Church Oniru
               </div>
-              <div
-                className="lh-1 mb-5 text-white"
-                style={{ fontFamily: "recia" }}
-              >
+              <div className="lh-1 mb-4" style={{ fontFamily: "recia" }}>
                 Lorem ipsum dolor sit amet, consectetur
                 <br />
                 Lorem ipsum dolor sit amet consectetur.
@@ -38,18 +28,14 @@ const Welcome = () => {
               </button>
               <br />
             </div>
-            <ul
-              className="d-inline-flex flex-row text-white ms-0 mt-5"
-              style={{ fontSize: "8px" }}
-            >
+            <ul className="hstack mt-4" style={{ fontSize: "8px" }}>
               <li className="mx-2">Welcome</li>
               <li className="mx-2">Youth</li>
               <li className="mx-2">Intercessor</li>
               <li className="mx-2">Family</li>
-              <li className="mx-2">Ladies Fellowship</li>
+              <li className="mx-2 text-nowrap">Ladies Fellowship</li>
             </ul>
           </Col>
-          {/* <Col></Col> */}
         </Row>
       </Container>
     </section>
