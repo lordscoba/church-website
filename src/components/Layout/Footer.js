@@ -14,18 +14,28 @@ const Footer = () => {
   };
   return (
     <footer style={backgroundFooter}>
-      <Container className="fs-6">
+      <Container className="">
         <Row className="mb-4 p-4">
-          <Col sm="6">
+          <Col sm="2">
             <div>
-              <img src={foursquareLogo} alt="fourSquare logo" />
+              <img
+                className="img-fluid"
+                src={foursquareLogo}
+                alt="fourSquare logo"
+              />
             </div>
           </Col>
-          <Col sm="6">
-            <div className="d-inline-flex text-white flex-row gx-3">
-              <div className="m-2">GIVING</div>
-              <div className="m-2">PRAYER REQUEST</div>
-              <div className="m-2">GET INVOLVED</div>
+          <Col sm="8">
+            <div className="d-flex text-white flex-row gx-3">
+              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
+                GIVING
+              </div>
+              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
+                PRAYER REQUEST
+              </div>
+              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
+                GET INVOLVED
+              </div>
             </div>
           </Col>
         </Row>
