@@ -19,3 +19,5 @@ export { default as pastor3 } from "./pastor3.png";
 export { default as pastor4 } from "./pastor4.png";
 export { default as request } from "./request.png";
 export { default as portrait2 } from "./portrait2.png";
+export { default as bible } from "./bible.svg";
+export { default as bibleSmall } from "./bibleSmall.svg";

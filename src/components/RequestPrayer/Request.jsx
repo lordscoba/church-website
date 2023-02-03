@@ -41,12 +41,10 @@ const Request = () => {
               <div className="col-12 col-md-12 hstack">
                 <label className="me-2 text-nowrap">Available pastors:</label>
                 <select
-                  class="form-select form-select-lg mb-3"
+                  className="form-select form-select-lg mb-3"
                   style={{ height: "100px" }}
                 >
-                  <option value="1">
-                    <h4>Pastor. Carrie Frami</h4>
-                  </option>
+                  <option value="1">Pastor. Carrie Frami</option>
                 </select>
               </div>
             </div>
@@ -55,7 +53,7 @@ const Request = () => {
                 <label className="me-2 text-nowrap">
                   Pick a date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 </label>
-                <select class="form-select">
+                <select className="form-select">
                   <option value="1">Mon Nov 27 2023 </option>
                 </select>
               </div>
@@ -63,7 +61,7 @@ const Request = () => {
                 <label className="me-2 text-nowrap">
                   Pick a time: &nbsp; &nbsp; &nbsp; &nbsp;
                 </label>
-                <select class="form-select">
+                <select className="form-select">
                   <option value="1">03:39:28 GMT+0100</option>
                 </select>
               </div>

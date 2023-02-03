@@ -27,15 +27,9 @@ const Footer = () => {
           </Col>
           <Col sm="8">
             <div className="d-flex text-white flex-row gx-3">
-              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
-                GIVING
-              </div>
-              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
-                PRAYER REQUEST
-              </div>
-              <div className="m-2 text-nowrap" style={{ fontSize: "7px" }}>
-                GET INVOLVED
-              </div>
+              <div className="m-2 text-nowrap">GIVING</div>
+              <div className="m-2 text-nowrap">PRAYER REQUEST</div>
+              <div className="m-2 text-nowrap">GET INVOLVED</div>
             </div>
           </Col>
         </Row>

@@ -14,7 +14,7 @@ import { slider } from "../images";
 const Home = () => {
   const background_image = {
     backgroundImage: `url(${slider})`,
-    maxHeight: "600px",
+    maxHeight: "auto",
     maxWidth: "100%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",

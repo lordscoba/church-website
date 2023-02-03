@@ -22,7 +22,7 @@ const navLinkDetails = [
   },
   {
     text: "REQUEST PRAYER",
-    url: "/request_prayer",
+    url: "/request-prayer",
   },
 ];
 
@@ -72,13 +72,14 @@ function NavbarMenu() {
                 // </Nav.Link>
               );
             })}
-            <button
+            <Link
               type="button"
               className="btn btn-outline-light rounded-4 me-4"
+              to={"/giving"}
             >
               <FaHandHoldingHeart />
               &nbsp; Giving
-            </button>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
