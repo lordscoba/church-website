@@ -87,7 +87,7 @@ export const Members = () => {
               <h3>View church photo gallery</h3>
               <button
                 type="button"
-                className="btn btn-outline-dark rounded-5"
+                className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{ fontFamily: "satoshi" }}
               >
                 Check Photos

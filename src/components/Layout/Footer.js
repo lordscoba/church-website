@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 // import { Link, useLocation } from "react-router-dom";
 import { foursquareLogo } from "../../images";
+import { footer3, footer4, footer5 } from "../../images/icons";
 import Container from "react-bootstrap/Container";
+import { IconContext } from "react-icons";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BsEnvelopeFill } from "react-icons/bs";
@@ -14,36 +16,63 @@ const Footer = () => {
   };
   return (
     <footer style={backgroundFooter}>
-      <Container className="">
-        <Row className="mb-4 p-4">
-          <Col sm="2">
-            <div>
-              <img
-                className="img-fluid"
-                src={foursquareLogo}
-                alt="fourSquare logo"
-              />
+      {/* <Container> */}
+      <div className="row text-white p-4">
+        <div className="col-12 col-md-4 col-lg-4 mb-4 mb-md-0">
+          <div className="">
+            <img
+              className="img-fluid"
+              src={foursquareLogo}
+              alt="fourSquare logo"
+            />
+          </div>
+        </div>
+        <div className="col-12 col-md-8 col-lg-8 ms-auto">
+          <div className="hstack g-3  float-start float-lg-end">
+            <div className="text-nowrap mx-1">
+              <p style={{ fontSize: "12px" }}>
+                <img
+                  style={{ maxWidth: "30px" }}
+                  src={footer5}
+                  alt="footerImage"
+                />{" "}
+                &nbsp; GIVING
+              </p>
             </div>
-          </Col>
-          <Col sm="8">
-            <div className="d-flex text-white flex-row gx-3">
-              <div className="m-2 text-nowrap">GIVING</div>
-              <div className="m-2 text-nowrap">PRAYER REQUEST</div>
-              <div className="m-2 text-nowrap">GET INVOLVED</div>
+            <div className="text-nowrap mx-1">
+              <p style={{ fontSize: "12px" }}>
+                <img
+                  tyle={{ maxWidth: "25px" }}
+                  src={footer4}
+                  alt="footerImage"
+                />{" "}
+                &nbsp;PRAYER REQUEST
+              </p>
             </div>
-          </Col>
-        </Row>
-        <hr style={{ color: "white" }} className="m-4 me-0 ms-0 ps-0 pe-0" />
-        <Row className="text-white p-5">
-          <FooterDetails />
-        </Row>
-        <Row className="p-5">
-          <p className="text-white text-center">
-            © 2023 Foursquare Gospel Church Oniru. All Rights Reserved Terms of
-            Use | Privacy Policy
-          </p>
-        </Row>
-      </Container>
+            <div className="text-nowrap mx-1">
+              <p style={{ fontSize: "12px" }}>
+                <img
+                  tyle={{ maxWidth: "25px" }}
+                  src={footer3}
+                  alt="footerImage"
+                />{" "}
+                &nbsp;GET INVOLVED
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style={{ color: "white" }} className="m-4 me-0 ms-0 ps-0 pe-0" />
+      <Row className="text-white p-5">
+        <FooterDetails />
+      </Row>
+      <Row className="p-5">
+        <p className="text-white text-center">
+          © 2023 Foursquare Gospel Church Oniru. All Rights Reserved Terms of
+          Use | Privacy Policy
+        </p>
+      </Row>
+      {/* </Container> */}
     </footer>
   );
 };
@@ -113,22 +142,38 @@ const FooterDetails = () => {
         >
           <li className="me-1">
             <a href="#">
-              <FaYoutube />
+              <IconContext.Provider value={{ color: "white" }}>
+                <div>
+                  <FaYoutube />
+                </div>
+              </IconContext.Provider>
             </a>
           </li>
           <li className="mx-1">
             <a href="#">
-              <FaTwitter />
+              <IconContext.Provider value={{ color: "white" }}>
+                <div>
+                  <FaTwitter />
+                </div>
+              </IconContext.Provider>
             </a>
           </li>
           <li className="mx-1">
             <a href="#">
-              <FaInstagram />
+              <IconContext.Provider value={{ color: "white" }}>
+                <div>
+                  <FaInstagram />
+                </div>
+              </IconContext.Provider>
             </a>
           </li>
           <li className="mx-1">
             <a href="#">
-              <FaFacebook />
+              <IconContext.Provider value={{ color: "white" }}>
+                <div>
+                  <FaFacebook />
+                </div>
+              </IconContext.Provider>
             </a>
           </li>
         </ul>

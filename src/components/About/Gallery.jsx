@@ -16,7 +16,7 @@ const Gallery = () => {
   return (
     <section className="text-white my-4" style={background_image}>
       <div className="row align-items-end" style={{ height: "600px" }}>
-        <div className="col-1 offset-2 me-0">
+        <div className="col-1 offset-2 me-3 me-lg-0">
           <IconContext.Provider value={{ size: "35px" }}>
             <div>
               <TbInfoSquare />

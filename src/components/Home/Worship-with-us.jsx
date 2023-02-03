@@ -21,17 +21,17 @@ export const Worship = () => {
             lorem. Nunc rutrum pharetra id a dictum venenatis sodales
             ullamcorper. Bibendum at vitae tristique viverra massa{" "}
           </p>
-          <div className="hstack p-3">
+          <div className=" p-2">
             <button
               type="button"
-              className="btn btn-outline-dark rounded-4 mx-2"
+              className="btn btn-outline-dark rounded-4 mx-1 text-nowrap my-1"
               style={{ fontFamily: "satoshi" }}
             >
               Become a member
             </button>
             <button
               type="button"
-              className="btn btn-outline-dark rounded-4 mx-2"
+              className="btn btn-outline-dark rounded-4 me-2 my-1 text-nowrap float-none float-md-end float-lg-end"
               style={{ fontFamily: "satoshi" }}
             >
               Explore our gallery

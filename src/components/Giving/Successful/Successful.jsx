@@ -12,7 +12,7 @@ const Successful = () => {
         </Link>
       </div>
       <div className="row">
-        <div className="col-12 col-md-8 p-5 my-3 mx-auto">
+        <div className="col-10 col-md-8 p-5 my-3 mx-auto">
           <div className="vstack">
             <div className="mx-auto my-3">
               <img src={tick} alt="success tick" style={{ width: "80px" }} />

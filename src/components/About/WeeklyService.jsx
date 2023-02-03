@@ -5,10 +5,10 @@ const WeeklyService = () => {
   return (
     <section>
       <div className="row">
-        <div className="col-4 p-5">
-          <h1>Our Weekly Service</h1>
+        <div className="col-12 col-md-4 col-lg-4 p-4">
+          <h1 className="my-2 display-2 fst-italic">Our Weekly Service</h1>
         </div>
-        <div className="col-8">
+        <div className="col-12 col-md-8 col-lg-8">
           <div className="p-5 me-lg-5">
             <hr />
             <div className="">
@@ -25,7 +25,7 @@ const WeeklyService = () => {
             </ul>
             <button
               type="button"
-              className="btn btn-outline-dark rounded-5 float-end"
+              className="btn btn-outline-dark rounded-5 float-end text-nowrap"
               style={{ fontFamily: "satoshi" }}
             >
               Add to your Calender
@@ -47,7 +47,7 @@ const WeeklyService = () => {
             </ul>
             <button
               type="button"
-              className="btn btn-outline-dark rounded-5 float-end"
+              className="btn btn-outline-dark rounded-5 float-end text-nowrap"
               style={{ fontFamily: "satoshi" }}
             >
               Add to your Calender

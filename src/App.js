@@ -1,13 +1,24 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
-import { Home, About, Events, RequestPrayer } from "./screens";
+import {
+  Home,
+  About,
+  Events,
+  RequestPrayer,
+  Video,
+  Volunteer,
+  Member,
+  Events_details,
+} from "./screens";
+// import Events_details from "./screens/Events_details";
 import {
   Giving,
   GivingDetails,
   GivingOnline,
   GivingSuccessful,
 } from "./screens/Giving";
+// import Volunteer from "./screens/Volunteer";
 
 const App = () => {
   return (
@@ -18,6 +29,10 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/request-prayer" element={<RequestPrayer />} />
+          <Route path="/video" element={<Video />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/member" element={<Member />} />
+          <Route path="/events-details" element={<Events_details />} />
         </Routes>
         <Routes>
           <Route path="/giving" element={<Giving />} />

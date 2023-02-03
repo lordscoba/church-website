@@ -3,10 +3,16 @@ import { manEyeGlass } from "../../images";
 
 export const Testimonies = () => {
   return (
-    <section className="" style={{ background: "#FFA739" }}>
+    <section
+      className=""
+      style={{ background: "#FFA739", overflowY: "scroll" }}
+    >
       <div className="row">
-        <div className="col hstack row align-items-start my-4">
-          <div className="col-6">
+        <div
+          className="col hstack row align-items-start my-4"
+          style={{ height: "400px" }}
+        >
+          <div className="col-4 col-lg-6">
             <img
               style={{ maxheight: "100%" }}
               className="img-fluid rounded-4"
@@ -14,7 +20,7 @@ export const Testimonies = () => {
               alt=""
             />
           </div>
-          <div className="col-6" style={{ fontSize: "12px" }}>
+          <div className="col-8 col-lg-6" style={{ fontSize: "12px" }}>
             <h2>Testimonies</h2>
             <p>
               I have been a member of this church for over 10 years now, and I

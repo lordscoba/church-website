@@ -5,3 +5,6 @@ export { default as giveOnline } from "./give_online.svg";
 export { default as givePerson } from "./give_person.svg";
 export { default as asset } from "./asset.svg";
 export { default as tick } from "./tick.svg";
+export { default as footer3 } from "./footer3.svg";
+export { default as footer4 } from "./footer4.svg";
+export { default as footer5 } from "./footer5.svg";

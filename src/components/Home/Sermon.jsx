@@ -10,7 +10,7 @@ const Sermon = () => {
     <section style={background} className="text-white">
       <h2 className=" p-3 d-flex fs-2">
         Watch Sermons
-        <button className="mx-3 btn btn-primary rounded-4">
+        <button className="mx-3 btn btn-primary rounded-4 text-nowrap">
           <RiVoiceprintFill /> Listen to Podcast
         </button>
       </h2>
