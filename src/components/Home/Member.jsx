@@ -19,7 +19,11 @@ export const Members = () => {
               <button
                 type="button"
                 className="btn btn-outline-dark rounded-5"
-                style={{ fontFamily: "satoshi" }}
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Start here
               </button>
@@ -36,7 +40,11 @@ export const Members = () => {
               <button
                 type="button"
                 className="btn btn-outline-dark rounded-5"
-                style={{ fontFamily: "satoshi" }}
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Give
               </button>
@@ -53,7 +61,11 @@ export const Members = () => {
               <button
                 type="button"
                 className="btn btn-outline-dark rounded-5"
-                style={{ fontFamily: "satoshi" }}
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Support
               </button>
@@ -70,8 +82,12 @@ export const Members = () => {
               <h3>Become a member</h3>
               <button
                 type="button"
-                className="btn btn-outline-dark rounded-5"
-                style={{ fontFamily: "satoshi" }}
+                className="btn btn-outline-dark rounded-5 text-nowrap"
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Start here
               </button>
@@ -88,7 +104,11 @@ export const Members = () => {
               <button
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
-                style={{ fontFamily: "satoshi" }}
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Check Photos
               </button>
@@ -104,8 +124,12 @@ export const Members = () => {
               <h3>Request prayer </h3>
               <button
                 type="button"
-                className="btn btn-outline-dark rounded-5"
-                style={{ fontFamily: "satoshi" }}
+                className="btn btn-outline-dark rounded-5 text-nowrap"
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 Send Request
               </button>
@@ -122,7 +146,11 @@ export const Members = () => {
               <button
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
-                style={{ fontFamily: "satoshi" }}
+                style={{
+                  fontFamily: "satoshi",
+                  fontSize: "13px",
+                  height: "40px",
+                }}
               >
                 About Us
               </button>

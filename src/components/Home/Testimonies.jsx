@@ -1,56 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import { manEyeGlass } from "../../images";
+import Slider from "react-slick";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-export const Testimonies = () => {
+const settings = {
+  // className: "center",
+  // centerMode: true,
+  infinite: true,
+  // fade: true,
+  // centerPadding: "30px",
+  slidesToShow: 1,
+  speed: 500,
+  initialSlide: 0,
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+  swipeToSlide: true,
+};
+
+const Testimonies = () => {
+  const [sliderRef, setSliderRef] = useState(null);
+
   return (
-    <section
-      className=""
-      style={{ background: "#FFA739", overflowY: "scroll" }}
-    >
-      <div className="row">
-        <div
-          className="col hstack row align-items-start my-4"
-          style={{ height: "400px" }}
-        >
-          <div className="col-4 col-lg-6">
-            <img
-              style={{ maxheight: "100%" }}
-              className="img-fluid rounded-4"
-              src={manEyeGlass}
-              alt=""
-            />
-          </div>
-          <div className="col-8 col-lg-6" style={{ fontSize: "12px" }}>
-            <h2>Testimonies</h2>
-            <p>
-              I have been a member of this church for over 10 years now, and I
-              can confidently say that it has been one of the most important and
-              meaningful parts of my life.
-              <br />
-              When I first started attending, I was going through a difficult
-              time in my life and felt lost and alone. But from the moment I
-              walked through the doors, I felt a sense of warmth and acceptance.
-              The people at this church truly became my family, and I found a
-              sense of belonging that I had been missing.
-              <br />
-              Through the years, I have grown in my faith and understanding of
-              God's love for me. The youth ministry and small group Bible
-              studies have been especially instrumental in helping me to develop
-              a deeper relationship with God. I have also been blessed to form
-              friendships with other members of the church that have lasted a
-              lifetime.
-              <br />I have also been able to get involved and serve in various
-              ways such as volunteering at events, participating in mission
-              trips, and using my talents and skills to serve in the church.
-              <br /> I am so grateful for this church and all that it has done
-              for me. It has been a place of healing, growth, and community. I
-              would highly recommend it to anyone looking for a place to belong
-              and grow in their faith.
-            </p>
-          </div>
-        </div>
+    <section className="" style={{ background: "#FFA739", overflowY: "auto" }}>
+      <div className="row p-5">
+        <Slider ref={setSliderRef} {...settings}>
+          <Testimony />
+          <Testimony />
+          <Testimony />
+          <Testimony />
+        </Slider>
       </div>
     </section>
+  );
+};
+
+const Testimony = () => {
+  return (
+    <div className="col-12 my-4" style={{ height: "300px" }}>
+      <div className="row d-flex g-0 overflow-y-hidden">
+        <div className="col-5 col-lg-6 image-div">
+          <img
+            // style={{ maxHeight: "auto", maxWidth: "100%" }}
+            className="img-fluid rounded-4 testimony-image"
+            src={manEyeGlass}
+            alt=""
+          />
+        </div>
+        <div
+          className="col-7 col-lg-6 testimony-text p-3"
+          style={{ fontSize: "15px" }}
+        >
+          <h2>Testimonies</h2>
+          <p>
+            I have been a member of this church for over 10 years now, and I can
+            confidently say that it has been one of the most important and
+            meaningful parts of my life.
+            <br />
+            When I first started attending, I was going through a difficult time
+            in my life and felt lost and alone. But from the moment I walked
+            through the doors, I felt a sense of warmth and acceptance. The
+            people at this church truly became my family, and I found a sense of
+            belonging that I had been missing.
+            <br />
+            Through the years, I have grown in my faith and understanding of
+            God's love for me. The youth ministry and small group Bible studies
+            have been especially instrumental in helping me to develop a deeper
+            relationship with God. I have also been blessed to form friendships
+            with other members of the church that have lasted a lifetime.
+            <br />I have also been able to get involved and serve in various
+            ways such as volunteering at events, participating in mission trips,
+            and using my talents and skills to serve in the church.
+            <br /> I am so grateful for this church and all that it has done for
+            me. It has been a place of healing, growth, and community. I would
+            highly recommend it to anyone looking for a place to belong and grow
+            in their faith.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -8,10 +8,10 @@ export const Events = () => {
       style={{ backgroundColor: "#000000" }}
     >
       <h2>Upcoming Events</h2>
-      <div className="row g-2">
-        <div className="col-4 p-1 vstack">
+      <div className="row g-1 g-lg-2">
+        <div className="col-6 col-lg-4 p-1">
           <img
-            className="img-fluid rounded-4 mb-2"
+            className="img-fluid rounded-3 mb-2"
             src={prayerManBending}
             alt=""
           />
@@ -31,9 +31,9 @@ export const Events = () => {
             Learn More
           </button>
         </div>
-        <div className="col-4 p-1 vstack">
+        <div className="col-6 col-lg-4 p-1">
           <img
-            className="img-fluid rounded-4 mb-2"
+            className="img-fluid rounded-3 mb-2"
             src={prayerManBending}
             alt=""
           />
@@ -53,9 +53,9 @@ export const Events = () => {
             Learn More
           </button>
         </div>
-        <div className="col-4 p-1 vstack">
+        <div className="col-6 col-lg-4 p-1">
           <img
-            className="img-fluid rounded-4 mb-2"
+            className="img-fluid rounded-3 mb-2"
             src={prayerManBending}
             alt=""
           />
@@ -76,8 +76,8 @@ export const Events = () => {
           </button>
         </div>
       </div>
-      <div className="row g-3 my-3">
-        <div className="col-4 mx-auto offset-5">
+      <div className="row my-3">
+        <div className="col-4 mx-auto text-center">
           <button
             type="button"
             className="btn btn-outline-light rounded-5 text-nowrap"

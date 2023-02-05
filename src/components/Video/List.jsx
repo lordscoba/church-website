@@ -2,6 +2,7 @@ import React from "react";
 import { sermon } from "../../images";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
 const List = () => {
   return (
@@ -63,41 +64,112 @@ const AllSermon = () => {
   );
 };
 
+// const PopularSermon = () => {
+//   const pastorStyling = {
+//     overflowX: "auto",
+//   };
+//   const pastorChildStyling = {
+//     display: "inline-block",
+//     float: "none",
+//     width: "auto",
+//   };
+//   return (
+//     <div
+//       className="row g-1 p-2 p-lg-5 flex-row flex-nowrap"
+//       style={pastorStyling}
+//     >
+//       {/* <h3 className="fw-light">Popular Sermons</h3> */}
+//       <div className="col-6 col-lg-4" style={pastorStyling}>
+//         <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+//         <h5 className="my-0">Build a Strong Faith with God</h5>
+//         <p>Pastot. Debra Durgan</p>
+//       </div>
+//       <div className="col-6 col-lg-4" style={pastorStyling}>
+//         <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+//         <h5 className="my-0">Build a Strong Faith with God</h5>
+//         <p>Pastot. Debra Durgan</p>
+//       </div>
+//       <div className="col-6 col-lg-4" style={pastorStyling}>
+//         <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+//         <h5 className="my-0">Build a Strong Faith with God</h5>
+//         <p>Pastot. Debra Durgan</p>
+//       </div>
+//       <div className="col-6 col-lg-4" style={pastorStyling}>
+//         <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+//         <h5 className="my-0">Build a Strong Faith with God</h5>
+//         <p>Pastot. Debra Durgan</p>
+//       </div>
+//     </div>
+//   );
+// };
+
+const settings = {
+  className: "center",
+  // centerMode: true,
+  infinite: true,
+  // centerPadding: "30px",
+  slidesToShow: 3,
+  speed: 500,
+  initialSlide: 0,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        // initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
+};
+
 const PopularSermon = () => {
-  const pastorStyling = {
-    overflowX: "auto",
-  };
-  const pastorChildStyling = {
-    display: "inline-block",
-    float: "none",
-    width: "auto",
-  };
   return (
-    <div
-      className="row g-1 p-2 p-lg-5 flex-row flex-nowrap"
-      style={pastorStyling}
-    >
-      {/* <h3 className="fw-light">Popular Sermons</h3> */}
-      <div className="col-6 col-lg-4" style={pastorStyling}>
-        <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
-        <h5 className="my-0">Build a Strong Faith with God</h5>
-        <p>Pastot. Debra Durgan</p>
-      </div>
-      <div className="col-6 col-lg-4" style={pastorStyling}>
-        <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
-        <h5 className="my-0">Build a Strong Faith with God</h5>
-        <p>Pastot. Debra Durgan</p>
-      </div>
-      <div className="col-6 col-lg-4" style={pastorStyling}>
-        <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
-        <h5 className="my-0">Build a Strong Faith with God</h5>
-        <p>Pastot. Debra Durgan</p>
-      </div>
-      <div className="col-6 col-lg-4" style={pastorStyling}>
-        <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
-        <h5 className="my-0">Build a Strong Faith with God</h5>
-        <p>Pastot. Debra Durgan</p>
-      </div>
+    <div className="row p-4 g-1 p-lg-2 mx-0 mx-lg-4">
+      <h3 className="fw-light">Popular Sermons</h3>
+      <Slider {...settings}>
+        <div className="col-6 col-lg-4 p-1">
+          <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+          <h5 className="my-0">Build a Strong Faith with God</h5>
+          <p>Pastot. Debra Durgan</p>
+        </div>
+        <div className="col-6 col-lg-4 p-1">
+          <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+          <h5 className="my-0">Build a Strong Faith with God</h5>
+          <p>Pastot. Debra Durgan</p>
+        </div>
+        <div className="col-6 col-lg-4 p-1">
+          <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+          <h5 className="my-0">Build a Strong Faith with God</h5>
+          <p>Pastot. Debra Durgan</p>
+        </div>
+        <div className="col-6 col-lg-4 p-1">
+          <img className="img-fluid rounded-3" src={sermon} alt="sermon" />
+          <h5 className="my-0">Build a Strong Faith with God</h5>
+          <p>Pastot. Debra Durgan</p>
+        </div>
+      </Slider>
     </div>
   );
 };

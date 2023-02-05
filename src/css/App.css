@@ -1,42 +1,71 @@
-.carousel-inner {
-  padding: 1em;
-}
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #e1e1e1;
-  width: 6vh;
-  height: 6vh;
+.slick-arrow {
+  background-color: rgba(0, 0, 0, 0.801) !important;
+  height: 4rem !important;
+  width: 4rem !important;
   border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 50;
 }
-@media (min-width: 768px) {
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
+
+@media (max-width: 480px) {
+  .slick-arrow {
+    background-color: rgba(0, 0, 0, 0.801) !important;
+    height: 2rem !important;
+    width: 2rem !important;
+    border-radius: 50%;
+    z-index: 50;
   }
-  .carousel-inner {
-    display: flex;
+}
+
+@media (max-width: 560px) {
+  .testimony-image {
+    width: 13rem !important;
+    height: 18rem !important;
+    overflow-y: auto;
+    object-fit: cover;
+    /* margin-left: 10px; */
+  }
+  .testimony-text {
+    width: 10rem !important;
+    height: 18rem !important;
+    overflow-y: auto;
+    margin-top: 0px;
+    /* padding: 1px; */
+    /* object-fit: cover; */
   }
 }
-.card .img-wrapper {
-  max-width: 100%;
-  height: 13em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 560px) and (max-width: 1200px) {
+  .testimony-image {
+    width: 18rem !important;
+    height: 15rem !important;
+    overflow-y: auto;
+    object-fit: cover;
+  }
+  .testimony-text {
+    width: 23rem !important;
+    height: 15rem !important;
+    overflow-y: auto;
+    margin-top: 3px;
+    padding: 1px;
+    /* object-fit: cover; */
+  }
 }
-.card img {
-  max-height: 100%;
-}
-@media (max-width: 767px) {
-  .card .img-wrapper {
-    height: 17em;
+
+@media (min-width: 1200px) {
+  .image-div {
+    overflow-y: scroll;
+    /* object-fit: cover; */
+  }
+  .testimony-image {
+    width: 36rem !important;
+    height: 29rem !important;
+    object-fit: cover;
+  }
+  .testimony-text {
+    width: 30rem !important;
+    height: 25rem !important;
+    /* margin-right: 1px; */
+    /* padding-right: 1px; */
+    overflow-y: auto;
+    object-fit: cover;
   }
 }

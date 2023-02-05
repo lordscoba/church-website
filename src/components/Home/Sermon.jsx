@@ -19,20 +19,14 @@ const Sermon = () => {
           <img className="img-fluid rounded-3" src={prayerManStanding} />
         </div>
       </div>
-      <div className="row hstack p-1 g-2">
+      <div className="row d-flex p-1 g-2">
         <div className="col">
-          <img className="img-fluid rounded-3" src={singer} />
-          <div className="lh-1">
-            <p style={{ fontSize: "10px" }}>
-              Build a Strong Faith With God
-              <br />
-              <small>Pastor. Femi Seun</small>
-            </p>
-          </div>
-        </div>
-        <div className="col">
-          <img className="img-fluid rounded-3" src={singer} />
-          <div className="lh-1">
+          <img
+            className="img-fluid rounded-3"
+            src={singer}
+            // style={{ width: "" }}
+          />
+          <div className="lh-2">
             <p style={{ fontSize: "7px" }}>
               Build a Strong Faith With God
               <br />
@@ -42,7 +36,7 @@ const Sermon = () => {
         </div>
         <div className="col">
           <img className="img-fluid rounded-3" src={singer} />
-          <div className="lh-1">
+          <div className="lh-2">
             <p style={{ fontSize: "7px" }}>
               Build a Strong Faith With God
               <br />
@@ -52,7 +46,17 @@ const Sermon = () => {
         </div>
         <div className="col">
           <img className="img-fluid rounded-3" src={singer} />
-          <div className="lh-1">
+          <div className="lh-2">
+            <p style={{ fontSize: "7px" }}>
+              Build a Strong Faith With God
+              <br />
+              <small>Pastor. Femi Seun</small>
+            </p>
+          </div>
+        </div>
+        <div className="col">
+          <img className="img-fluid rounded-3" src={singer} />
+          <div className="lh-2">
             <p style={{ fontSize: "7px" }}>
               Build a Strong Faith With God
               <br />
@@ -62,8 +66,18 @@ const Sermon = () => {
         </div>
         <div className="col">
           <img
-            style={{ width: "auto" }}
-            className="img-fluid rounded-3 mt-0 pt-0"
+            style={{ width: "auto", height: "5rem" }}
+            className="img-fluid d-block d-md-none d-lg-none rounded-3 mt-0 pt-0"
+            src={viewAll}
+          />
+          <img
+            style={{ width: "auto", height: "13rem" }}
+            className="img-fluid d-none d-md-block d-lg-none rounded-3 mt-0 pt-0"
+            src={viewAll}
+          />
+          <img
+            style={{ width: "auto", height: "13rem" }}
+            className="img-fluid d-none d-md-none d-lg-block rounded-3 mt-0 pt-0"
             src={viewAll}
           />
           <div></div>
