@@ -121,7 +121,7 @@ export const Members = () => {
               <h3>Know about the church</h3>
               <button
                 type="button"
-                className="btn btn-outline-dark rounded-5"
+                className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{ fontFamily: "satoshi" }}
               >
                 About Us

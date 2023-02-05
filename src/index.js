@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "react-multi-carousel/lib/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

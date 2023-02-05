@@ -92,7 +92,7 @@ const List = () => {
               <div className="">
                 <button
                   type="button"
-                  className="btn btn-outline-dark rounded-4 text-nowrap"
+                  className="btn btn-outline-dark rounded-5 text-nowrap"
                 >
                   {inside?.button}
                 </button>

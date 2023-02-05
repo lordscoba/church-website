@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import { prayerManBending } from "../../images/";
+import { Link } from "react-router-dom";
 
 const Search = () => {
   return (
@@ -37,13 +38,14 @@ const Search = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-dark rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
           <img className="img-fluid rounded-3" src={prayerManBending} alt="" />
@@ -53,13 +55,14 @@ const Search = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-dark rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
           <img className="img-fluid rounded-3" src={prayerManBending} alt="" />
@@ -69,13 +72,14 @@ const Search = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-dark rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
           <img className="img-fluid rounded-3" src={prayerManBending} alt="" />
@@ -85,13 +89,14 @@ const Search = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-dark rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

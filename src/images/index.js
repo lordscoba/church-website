@@ -27,3 +27,8 @@ export { default as videoMain } from "./video_main.png";
 export { default as volunteerMain } from "./volunteer_main.png";
 export { default as listImage1 } from "./list_image1.png";
 export { default as listImage2 } from "./list_image2.png";
+export { default as ministerOne } from "./minister_one.png";
+export { default as ministerTwo } from "./minister_two.png";
+export { default as ministerThree } from "./minister_three.png";
+export { default as phone } from "./phone_app.png";
+export { default as sermon } from "./sermon.png";
