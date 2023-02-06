@@ -1,5 +1,6 @@
 export { default as ellipseOrange } from "./ellipseOrange.svg";
 export { default as ellipsePurple } from "./ellipsePurple.svg";
+export { default as ellipseBlue } from "./EllipseBlue.svg";
 export { default as ellipseRed } from "./ellipseRed.svg";
 export { default as kindHearted } from "./kindHearted.svg";
 export { default as prayerManBending } from "./prayerManBending.svg";

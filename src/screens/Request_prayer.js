@@ -11,6 +11,7 @@ const RequestPrayer = () => {
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    overflowX: "hidden",
     // backgroundAttachment: "fixed",
   };
 

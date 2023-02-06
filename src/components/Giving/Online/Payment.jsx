@@ -21,9 +21,9 @@ const Payment = () => {
         </div>
       </div>
       <div className="row p-4">
-        <div className="col-10 col-lg-8 p-2 p-lg-5 mx-auto">
+        <div className="col-12 col-lg-8 p-2 p-lg-5 mx-auto">
           <nav
-            className="nav nav-pills nav-justified"
+            className="nav nav-pills nav-justified d-flex"
             id="pills-tab"
             role="tablist"
           >
@@ -122,30 +122,24 @@ const Payment = () => {
 export const PaymentCard = () => {
   return (
     <>
-      <form className="my-3">
-        <div className="row g-2">
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2">
-              Amount: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="139,000,000"
-            />
+      <form>
+        <div className="row my-3 g-1 g-lg-4">
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-5">Amount:</label>
+            <input className="form-control" placeholder="139,000,000" />
           </div>
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2 text-nowrap">Church: &nbsp; &nbsp;</label>
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-5">Church:</label>
             <select className="form-select">
               <option value="1">Youth Church</option>
+              <option></option>
             </select>
           </div>
         </div>
-        <div className="row g-2 mt-4">
-          <div className="col-12 col-md-12 hstack">
-            <label className="me-2 text-nowrap">Description:</label>
-            <textarea className="form-control mb-4" rows="3" readOnly>
+        <div className="row my-3">
+          <div className="col-12 d-lg-flex">
+            <label className="text-nowrap me-lg-3">Description:</label>
+            <textarea className="form-control" rows="4">
               Donating to our church helps us to maintain and improve our
               facilities, provide spiritual guidance and support to our
               congregation, and reach out to those in need in our community.
@@ -154,57 +148,53 @@ export const PaymentCard = () => {
             </textarea>
           </div>
         </div>
-        <div className="row g-2">
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2 text-nowrap">
-              Card Number*: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <div className="row my-3 g-1 g-lg-4">
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-3 text-nowrap">
+              Card Number*:
             </label>
             <input
-              type="text"
+              style={{ height: "35px" }}
               className="form-control"
-              placeholder="139,000,000"
+              placeholder="702-962-5210"
             />
           </div>
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2 text-nowrap">
-              Card Holder Name*: &nbsp; &nbsp; &nbsp; &nbsp;
-            </label>
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-3">Card Holder Name*:</label>
             <input
-              type="text"
+              style={{ height: "35px" }}
               className="form-control"
-              placeholder="139,000,000"
-            />
-          </div>
-        </div>
-        <div className="row g-2 mt-3">
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2 text-nowrap">
-              Expiry date*: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            </label>
-            <select className="form-select me-1">
-              <option value="1">Month</option>
-            </select>
-            <select className="form-select">
-              <option value="1">Year</option>
-            </select>
-          </div>
-          <div className="col-12 col-md-6 hstack">
-            <label className="me-2 text-nowrap">
-              CVC*: &nbsp; &nbsp; &nbsp; &nbsp;
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="139,000,000"
+              placeholder="Angelica Erdman"
             />
           </div>
         </div>
-        <div className="row my-4">
+        <div className="row my-3 g-1 g-lg-4">
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-3">Expiry date*:</label>
+            <select style={{ height: "35px" }} className="form-select">
+              <option>Month</option>
+              <option></option>
+            </select>
+            <select style={{ height: "35px" }} className="form-select">
+              <option>Year</option>
+              <option></option>
+            </select>
+          </div>
+          <div className="col-6 d-lg-flex">
+            <label className="form-label me-lg-5 text-nowrap">CVC*:</label>
+            <input
+              style={{ height: "35px" }}
+              className="form-control"
+              placeholder="702"
+            />
+          </div>
+        </div>
+        <div className="row my-3 g-1 g-lg-4">
           <Link
             to={"/giving-details"}
             type="button"
-            className="btn btn-lg text-white"
-            style={{ backgroundColor: "#9747FF" }}
+            className="btn"
+            style={{ background: "#9747FF" }}
           >
             Confirm Payment
           </Link>

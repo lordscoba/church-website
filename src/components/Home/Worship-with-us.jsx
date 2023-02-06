@@ -4,6 +4,7 @@ import {
   ellipsePurple,
   ellipseOrange,
   ellipseRed,
+  ellipseBlue,
 } from "../../images";
 
 export const Worship = () => {
@@ -39,11 +40,12 @@ export const Worship = () => {
           </div>
         </div>
         <div
-          className="col-12 col-lg-7 position-relative"
+          className="col-12 col-lg-7 position-relative p-1"
           style={{ overflow: "hidden" }}
         >
           <div className="position-absolute">
             <img
+              className="z-3"
               style={{ height: "40rem", width: "100%" }}
               src={kindHearted}
               alt=""
@@ -51,19 +53,27 @@ export const Worship = () => {
           </div>
           <div className="position-absolute">
             <img
+              className="z-n1"
               style={{ height: "20rem", width: "100%" }}
               src={ellipsePurple}
               alt=""
             />
           </div>
-          <div className="position-absolute">
+          <div className="position-absolute top-50 start-50">
+            <img
+              style={{ height: "20rem", width: "100%" }}
+              src={ellipseBlue}
+              alt=""
+            />
+          </div>
+          <div className="position-absolute bottom-0 end-50">
             <img
               style={{ height: "20rem", width: "100%" }}
               src={ellipseRed}
               alt=""
             />
           </div>
-          <div className="position-absolute">
+          <div className="position-absolute top-0 end-0">
             <img
               style={{ height: "20rem", width: "100%" }}
               src={ellipseOrange}

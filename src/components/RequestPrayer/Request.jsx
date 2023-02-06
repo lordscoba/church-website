@@ -1,5 +1,6 @@
 import React from "react";
 import { portrait2 } from "../../images";
+import { Link } from "react-router-dom";
 
 const Request = () => {
   return (
@@ -12,72 +13,76 @@ const Request = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-10 col-md-10 offset-1">
+        <div className="col-11 col-md-10 col-lg-10 mx-auto">
           <form>
-            <div className="row g-2">
-              <div className="col-12 col-md-6 hstack">
-                <label className="me-2">
-                  Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div className="row my-3 g-1 g-lg-4">
+              <div className="col-6 d-lg-flex">
+                <label className="form-label me-lg-5">
+                  Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 </label>
                 <input
-                  type="text"
+                  style={{ height: "35px" }}
                   className="form-control"
                   placeholder="Shannon Turcotte"
                 />
               </div>
-              <div className="col-12 col-md-6 hstack">
-                <label className="me-2 text-nowrap">
-                  Email address: &nbsp; &nbsp;
-                </label>
+              <div className="col-6 d-lg-flex">
+                <label className="form-label me-lg-5">Email Address:</label>
                 <input
-                  type="text"
+                  style={{ height: "35px" }}
                   className="form-control"
                   placeholder="ShannonTurcotte@yahoo.com"
                 />
               </div>
             </div>
-            <div className="row g-2 mt-4">
-              <div className="col-12 col-md-12 hstack">
-                <label className="me-2 text-nowrap">Available pastors:</label>
-                <select
-                  className="form-select form-select-lg mb-3"
-                  style={{ height: "100px" }}
-                >
+            <div className="row my-3">
+              <div className="col-12 d-lg-flex">
+                <label className="me-lg-1 p-1">Available pastors:</label>
+                <select className="form-select mb-3" style={{ height: "80px" }}>
                   <option value="1">Pastor. Carrie Frami</option>
                 </select>
               </div>
             </div>
-            <div className="row g-2">
-              <div className="col-12 col-md-6 hstack">
-                <label className="me-2 text-nowrap">
-                  Pick a date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div className="row my-3 g-1 g-lg-4">
+              <div className="col-6 d-lg-flex">
+                <label className="form-label me-lg-4 text-nowrap">
+                  Pick a date: &nbsp;
                 </label>
-                <select className="form-select">
-                  <option value="1">Mon Nov 27 2023 </option>
+                <select style={{ height: "35px" }} className="form-select">
+                  <option>Mon Nov 27 2023 </option>
+                  <option></option>
                 </select>
               </div>
-              <div className="col-12 col-md-6 hstack">
-                <label className="me-2 text-nowrap">
-                  Pick a time: &nbsp; &nbsp; &nbsp; &nbsp;
-                </label>
-                <select className="form-select">
-                  <option value="1">03:39:28 GMT+0100</option>
+              <div className="col-6 d-lg-flex">
+                <label className="form-label me-lg-3">Pick a time:</label>
+                <select style={{ height: "35px" }} className="form-select">
+                  <option>03:39:28 GMT+0100</option>
+                  <option></option>
                 </select>
               </div>
             </div>
-            <div className="row g-2 mt-4">
-              <div className="col-12 col-md-12 hstack">
-                <label className="me-2 text-nowrap">
-                  Your Request: &nbsp; &nbsp; &nbsp;
-                </label>
-                <textarea className="form-control" rows="6"></textarea>
+            <div className="row my-3">
+              <div className="col-12 d-lg-flex">
+                <label className="text-nowrap p-1 me-lg-3">Your request:</label>
+                <textarea className="form-control" rows="4">
+                  Donating to our church helps us to maintain and improve our
+                  facilities, provide spiritual guidance and support to our
+                  congregation, and reach out to those in need in our community.
+                  Your contribution, no matter the size, is invaluable and helps
+                  us to continue our mission. Thank you for your generosity and
+                  suppor
+                </textarea>
               </div>
             </div>
-            <div className="row my-4">
-              <button type="button" className="btn btn-lg btn-success">
+            <div className="row my-3 g-1 g-lg-4">
+              <Link
+                to={"#"}
+                type="button"
+                className="btn"
+                style={{ background: "#9747FF" }}
+              >
                 Submit Now
-              </button>
+              </Link>
             </div>
           </form>
         </div>
