@@ -40,42 +40,97 @@ export const Worship = () => {
           </div>
         </div>
         <div
-          className="col-12 col-lg-7 position-relative p-1"
-          style={{ overflow: "hidden" }}
+          className="col-11 col-lg-7 p-5 ms-auto"
+          style={{
+            overflow: "hidden",
+            position: "relative",
+            height: "550px",
+            width: "",
+          }}
         >
-          <div className="position-absolute">
+          <div
+            className=""
+            style={{
+              height: "100%",
+              width: "100%",
+              top: "30px",
+              left: "20px",
+              position: "absolute",
+              zIndex: "1",
+            }}
+          >
             <img
-              className="z-3"
-              style={{ height: "40rem", width: "100%" }}
+              className=""
               src={kindHearted}
+              style={{ height: "510px", width: "350px", objectFit: "cover" }}
               alt=""
             />
           </div>
-          <div className="position-absolute">
+          <div
+            className=""
+            style={{
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              top: "240px",
+              left: "210px",
+              zIndex: "10",
+            }}
+          >
             <img
-              className="z-n1"
-              style={{ height: "20rem", width: "100%" }}
+              className=""
+              style={{ height: "350px", width: "350px", objectFit: "cover" }}
               src={ellipsePurple}
               alt=""
             />
           </div>
-          <div className="position-absolute top-50 start-50">
+          <div
+            className=""
+            style={{
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              top: "90px",
+              left: "210px",
+              zIndex: "-20",
+            }}
+          >
             <img
-              style={{ height: "20rem", width: "100%" }}
+              style={{ height: "400px", width: "400px", objectFit: "cover" }}
               src={ellipseBlue}
               alt=""
             />
           </div>
-          <div className="position-absolute bottom-0 end-50">
+          <div
+            className=""
+            style={{
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              top: "7px",
+              left: "190px",
+              zIndex: "-30",
+            }}
+          >
             <img
-              style={{ height: "20rem", width: "100%" }}
+              style={{ height: "350px", width: "350px", objectFit: "cover" }}
               src={ellipseRed}
               alt=""
             />
           </div>
-          <div className="position-absolute top-0 end-0">
+          <div
+            className=""
+            style={{
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              top: "90px",
+              left: "20px",
+              zIndex: "-30",
+            }}
+          >
             <img
-              style={{ height: "20rem", width: "100%" }}
+              style={{ height: "350px", width: "350px", objectFit: "cover" }}
               src={ellipseOrange}
               alt=""
             />

@@ -4,7 +4,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 const WeeklyService = () => {
   return (
     <section>
-      <div className="row">
+      <div className="row ms-4">
         <div className="col-12 col-md-4 col-lg-4 p-4">
           <h1 className="my-2 display-2 fst-italic">Our Weekly Service</h1>
         </div>
