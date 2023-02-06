@@ -16,15 +16,15 @@ const Confirmation = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-8 p-5 my-3 mx-auto">
-          <div>
+        <div className="col-12 col-md-8 p-2 p-lg-5 my-3 mx-auto">
+          <div className="">
             <ul style={{ listStyleType: "none" }}>
               <li style={{ maxWidth: "100%" }}>
                 <div className="row">
                   <div className="col-3">
                     <h5>Amount:</h5>
                   </div>
-                  <div className="offset-2 col-7">
+                  <div className="offset-1 offset-lg-2 col-8 col-lg-7">
                     <h3>NGN 133,990,000,000</h3>
                   </div>
                 </div>
@@ -34,7 +34,7 @@ const Confirmation = () => {
                   <div className="col-3">
                     <h5>Receiver’s Name:</h5>
                   </div>
-                  <div className="offset-2 col-7">
+                  <div className="offset-1 offset-lg-2 col-8 col-lg-7">
                     <p>Youth Church Account</p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const Confirmation = () => {
                   <div className="col-3">
                     <h5>Church:</h5>
                   </div>
-                  <div className="offset-2 col-7">
+                  <div className="offset-1 offset-lg-2 col-8 col-lg-7">
                     <p>Youth Church</p>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ const Confirmation = () => {
                   <div className="col-3">
                     <h5>Description:</h5>
                   </div>
-                  <div className="offset-2 col-7">
+                  <div className="offset-1 offset-lg-2 col-8 col-lg-7">
                     <p>
                       Donating to our church helps us to maintain and improve
                       our facilities, provide spiritual guidance and support to
@@ -69,7 +69,7 @@ const Confirmation = () => {
                 </div>
               </li>
             </ul>
-            <div className="row">
+            <div className="row p-4">
               <Link
                 to={"/giving-successful"}
                 type="button"
