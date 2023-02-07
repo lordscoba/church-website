@@ -40,7 +40,7 @@ export const Worship = () => {
           </div>
         </div>
         <div
-          className="col-11 col-lg-7 p-5 ms-auto"
+          className="col-12 col-lg-7 p-5 ms-auto"
           style={{
             overflow: "hidden",
             position: "relative",
@@ -49,7 +49,7 @@ export const Worship = () => {
           }}
         >
           <div
-            className=""
+            className="text-center"
             style={{
               height: "100%",
               width: "100%",

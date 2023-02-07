@@ -6,3 +6,4 @@ export { default as Events_details } from "./Events_details.js";
 export { default as Member } from "./Member.js";
 export { default as Video } from "./Video.js";
 export { default as Volunteer } from "./Volunteer.js";
+export { default as Fellowship } from "./Fellowship.js";

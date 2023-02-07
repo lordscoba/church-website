@@ -10,15 +10,26 @@ import {
   Volunteer,
   Member,
   Events_details,
+  Fellowship,
 } from "./screens";
-// import Events_details from "./screens/Events_details";
 import {
   Giving,
   GivingDetails,
   GivingOnline,
   GivingSuccessful,
 } from "./screens/Giving";
-// import Volunteer from "./screens/Volunteer";
+
+import {
+  YouthChurch,
+  IntercessorsChurch,
+  LadiesFellowship,
+  FamilyChurch,
+  TeensChurch,
+  AdultChurch,
+  MenChurch,
+  ChildrenChurch,
+  YouthGallery,
+} from "./screens/Church";
 
 const App = () => {
   return (
@@ -33,12 +44,24 @@ const App = () => {
           <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/member" element={<Member />} />
           <Route path="/events-details" element={<Events_details />} />
+          <Route path="/fellowship" element={<Fellowship />} />
         </Routes>
         <Routes>
           <Route path="/giving" element={<Giving />} />
           <Route path="/giving-online" element={<GivingOnline />} />
           <Route path="/giving-details" element={<GivingDetails />} />
           <Route path="/giving-successful" element={<GivingSuccessful />} />
+        </Routes>
+        <Routes>
+          <Route path="/youth-church" element={<YouthChurch />} />
+          <Route path="/intercessors-church" element={<IntercessorsChurch />} />
+          <Route path="/ladies-fellowship" element={<LadiesFellowship />} />
+          <Route path="/family-church" element={<FamilyChurch />} />
+          <Route path="/teens-church" element={<TeensChurch />} />
+          <Route path="/adult-church" element={<AdultChurch />} />
+          <Route path="/men-church" element={<MenChurch />} />
+          <Route path="/children-church" element={<ChildrenChurch />} />
+          <Route path="/youth-gallery" element={<YouthGallery />} />
         </Routes>
       </Layout>
     </BrowserRouter>
