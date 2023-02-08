@@ -7,7 +7,7 @@ import {
   SupportMinistry,
 } from "../../components/YouthChurch";
 import { NavbarMenu } from "../../components/Layout";
-import { youthChurch as youthChucher } from "../../images";
+import { youthChurch as youthChucher, skimpyBackground } from "../../images";
 
 const youthChurch = () => {
   const background_image = {
@@ -17,6 +17,19 @@ const youthChurch = () => {
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    backgroundColor: "#CACACA",
+    // backgroundAttachment: "fixed",
+  };
+
+  const background_image2 = {
+    backgroundImage: `url(${skimpyBackground})`,
+    maxHeight: "auto",
+    maxWidth: "100%",
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundColor: "#474747",
+    // mixBlendMode: "lighten",
     // backgroundAttachment: "fixed",
   };
   return (
@@ -25,8 +38,10 @@ const youthChurch = () => {
         <NavbarMenu />
         <Welcome />
       </header>
-      <MemberPage />
-      <Gallery />
+      <div style={background_image2} mb-0>
+        <MemberPage />
+        <Gallery />
+      </div>
       <MeetPastors />
       <SupportMinistry />
     </div>

@@ -7,11 +7,12 @@ import { ladiesHero } from "../../images";
 const ladiesFellowship = () => {
   const background_image = {
     backgroundImage: `url(${ladiesHero})`,
-    maxHeight: "auto",
+    maxHeight: "100%",
     maxWidth: "100%",
-    backgroundPosition: "center center",
+    backgroundPosition: "right bottom",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
+    backgroundColor: "#9747FF",
     // backgroundAttachment: "fixed",
   };
   return (

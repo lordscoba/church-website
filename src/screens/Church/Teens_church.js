@@ -9,9 +9,10 @@ const teensChurch = () => {
     backgroundImage: `url(${teensHero})`,
     maxHeight: "auto",
     maxWidth: "100%",
-    backgroundPosition: "center center",
+    backgroundPosition: "right bottom",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
+    backgroundColor: "#E5E5E5",
     // backgroundAttachment: "fixed",
   };
   return (

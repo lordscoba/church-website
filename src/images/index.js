@@ -49,3 +49,19 @@ export { default as youthHero1 } from "./youth_hero_1.png";
 export { default as youthHero2 } from "./youth_hero_2.png";
 export { default as youthHero3 } from "./youth_hero_3.png";
 export { default as youthHero4 } from "./youth_hero_4.png";
+
+export { default as handLove } from "./hand_love.png";
+export { default as meetPastor } from "./meet_pastor.png";
+export { default as skimpyBackground } from "./skimpy-background.png";
+export { default as spiritualityHands } from "./spirituality-hands.png";
+
+export { default as vectorBlock } from "./vector-block.png";
+export { default as experience1 } from "./experience_1.png";
+export { default as experience2 } from "./experience_2.png";
+export { default as experience3 } from "./experience_3.png";
+
+export { default as playfulCouple } from "./playful_couple.png";
+export { default as subsection1 } from "./subsection1.png";
+export { default as subsection2 } from "./subsection2.png";
+export { default as subsection3 } from "./subsection3.png";
+export { default as subsection4 } from "./subsection4.png";
