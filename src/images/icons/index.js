@@ -8,3 +8,8 @@ export { default as tick } from "./tick.svg";
 export { default as footer3 } from "./footer3.svg";
 export { default as footer4 } from "./footer4.svg";
 export { default as footer5 } from "./footer5.svg";
+
+// output icons
+export { default as OutputIcon1 } from "./output_icon_1.png";
+export { default as OutputIcon2 } from "./output_icon_2.png";
+export { default as OutputIcon3 } from "./output_icon_3.png";

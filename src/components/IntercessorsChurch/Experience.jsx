@@ -14,7 +14,7 @@ const Experience = () => {
   };
   return (
     <section className="" style={background_image}>
-      <div className="row py-3" style={{ height: "550px" }}>
+      <div className="row py-3" style={{ height: "650px" }}>
         <div className="col-9 col-lg-6 align-self-center p-5">
           <h3>Experience the power of prayer and intercession in our Church</h3>
           <p className="my-4">
