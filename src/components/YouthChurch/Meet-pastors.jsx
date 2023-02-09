@@ -33,7 +33,7 @@ const MeetPastors = () => {
             className="img-fluid rounded-3 d-block d-lg-none"
             src={meetPastor}
             alt="meet pastor"
-            style={{ height: "210px" }}
+            style={{ height: "210px", objectFit: "cover" }}
           />
         </div>
       </div>

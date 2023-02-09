@@ -13,3 +13,9 @@ export { default as footer5 } from "./footer5.svg";
 export { default as OutputIcon1 } from "./output_icon_1.png";
 export { default as OutputIcon2 } from "./output_icon_2.png";
 export { default as OutputIcon3 } from "./output_icon_3.png";
+
+// children page icons
+export { default as birdIcon } from "./bird_icon.svg";
+export { default as heartIcon } from "./heart_icon.svg";
+export { default as ropeIcon } from "./rope_icon.svg";
+export { default as sunIcon } from "./sun_icon.svg";

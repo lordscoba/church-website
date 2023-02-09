@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 const Welcome = () => {
   return (
     <section className="text-white">
-      <div className="row p-3 align-items-end" style={{ height: "590px" }}>
+      <div className="row p-3 align-items-end" style={{ height: "650px" }}>
         <div className="col-6 col-lg-6 offset-1 mb-5">
           <h3 className="display-1 fst-italic" style={{ color: "#FFA739" }}>
             Children Church

@@ -6,17 +6,17 @@ import {
   PrayerNight,
 } from "../../components/YouthGallery";
 import { NavbarMenu } from "../../components/Layout";
-import { slider2 } from "../../images";
+import { galleryHero } from "../../images";
 
 const youthGallery = () => {
   const background_image = {
-    backgroundImage: `url(${slider2})`,
+    backgroundImage: `url(${galleryHero})`,
     maxHeight: "auto",
     maxWidth: "100%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    // backgroundAttachment: "fixed",
+    backgroundColor: "rgba(53, 53, 53, 0.5)",
   };
   return (
     <div style={{ overflowX: "hidden" }}>
@@ -27,6 +27,13 @@ const youthGallery = () => {
       <Buttons />
       <YouthOutreach />
       <PrayerNight />
+      <YouthOutreach />
+      <PrayerNight />
+      <YouthOutreach />
+      <PrayerNight />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

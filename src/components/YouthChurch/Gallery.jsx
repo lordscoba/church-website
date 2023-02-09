@@ -41,13 +41,17 @@ const Gallery = () => {
   };
   return (
     <section className="mx-2 mx-lg-5">
+      <br />
+      <br />
       <div className="row my-5">
-        <div className="col-8 col-md-5 col-lg-5 mx-auto">
+        <div className="col-11 col-md-5 col-lg-5 mx-auto">
           <h2 style={background_image} className="text-center fst-italic p-4">
             Our Gallery
           </h2>
         </div>
       </div>
+      <br />
+      <br />
       <MediaRow1
         Image1={YouthMedia1}
         Image2={YouthMedia2}

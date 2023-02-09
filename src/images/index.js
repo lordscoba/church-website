@@ -70,3 +70,4 @@ export { default as titleVector } from "./title_vector.svg";
 export { default as vectorFine } from "./vector_fine.svg";
 export { default as wavyBorderWhite } from "./wavy_border_white.png";
 export { default as wavyBorderYellow } from "./wavy_border_yellow.png";
+export { default as galleryHero } from "./gallery_hero.png";

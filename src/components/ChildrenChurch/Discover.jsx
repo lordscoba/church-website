@@ -1,5 +1,6 @@
 import React from "react";
 import { wavyBorderWhite, wavyBorderYellow } from "../../images";
+import { birdIcon, ropeIcon, sunIcon, heartIcon } from "../../images/icons";
 
 const Discover = () => {
   const background_image = {
@@ -15,8 +16,18 @@ const Discover = () => {
   };
   return (
     <section className="py-5" style={background_image}>
-      <div className="row" style={{ height: "450px" }}>
-        <div className="col-9 col-lg-6 mx-auto align-self-center">
+      <div className="row p-3 p-lg-5" style={{ height: "550px" }}>
+        <div className="col-2 col-lg-3">
+          <div className="row h-100">
+            <div className="col-12 align-self-start" style={{ width: "100%" }}>
+              <img className="img-fluid" src={birdIcon} alt="" />
+            </div>
+            <div className="col-12 align-self-end">
+              <img className="img-fluid" src={ropeIcon} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="col-8 col-lg-6 align-self-center">
           <h4 className="text-center display-4">
             Discover a world of faith and fun at our Children Church
           </h4>
@@ -34,6 +45,16 @@ const Discover = () => {
             <button className="btn btn-outline-dark rounded-5">
               Support Church
             </button>
+          </div>
+        </div>
+        <div className="col-2 col-lg-3">
+          <div className="row h-100">
+            <div className="col-12 align-self-start">
+              <img className="img-fluid" src={sunIcon} alt="" />
+            </div>
+            <div className="col-12 align-self-end">
+              <img className="img-fluid" src={heartIcon} alt="" />
+            </div>
           </div>
         </div>
       </div>
