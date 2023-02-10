@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <section className="text-white">
       <div className="row p-3 align-items-end" style={{ height: "460px" }}>
-        <div className="col-5 col-lg-5 offset-2 mb-5">
+        <div className="col-9 col-lg-5 offset-0 offset-lg-2 mb-5">
           <h3 className="display-1 fst-italic" style={{ color: "#136CD0" }}>
             Family Church
           </h3>

@@ -8,7 +8,7 @@ const Ways = () => {
       <div className="row">
         <h1 className="text-center my-5">Ways to Give</h1>
       </div>
-      <div className="row px-5 gy-2 p-4 align-items-center justify-content-center mb-5">
+      <div className="row px-5 gy-2 p-4 align-items-center justify-content-center pb-5">
         <div
           className="col-12 col-md-6 col-lg-3 p-4 rounded-4 mx-md-2"
           style={{ backgroundColor: "#ffffff" }}

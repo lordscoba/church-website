@@ -6,7 +6,7 @@ const Embark = () => {
     backgroundImage: `url(${vectorBlock})`,
     maxHeight: "auto",
     maxWidth: "100%",
-    backgroundPosition: "center center",
+    backgroundPosition: "right bottom",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundColor: "#FF4F33",

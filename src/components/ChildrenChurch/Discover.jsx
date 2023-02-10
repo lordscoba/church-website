@@ -16,7 +16,7 @@ const Discover = () => {
   };
   return (
     <section className="py-5" style={background_image}>
-      <div className="row p-3 p-lg-5" style={{ height: "550px" }}>
+      <div className="row p-3 p-lg-5" style={{ height: "600px" }}>
         <div className="col-2 col-lg-3">
           <div className="row h-100">
             <div className="col-12 align-self-start" style={{ width: "100%" }}>

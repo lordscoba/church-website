@@ -12,7 +12,7 @@ import {
 
 const YouthOutreach = () => {
   return (
-    <section className=" mx-5 mt-5">
+    <section className=" mx-2 mx-lg-5 my-3 my-lg-5">
       <div
         className="row p-3 g-1 rounded-3 align-items-center"
         style={{ backgroundColor: "#FFA739" }}

@@ -9,7 +9,7 @@ const WeeklyService = () => {
           <h1 className="my-2 display-2 fst-italic">Our Weekly Service</h1>
         </div>
         <div className="col-12 col-md-8 col-lg-8">
-          <div className="p-5 me-lg-5">
+          <div className="p-2 p-lg-5 me-lg-5 mb-3">
             <hr />
             <div className="">
               <span className="display-6">Sunday Service</span>
@@ -30,8 +30,9 @@ const WeeklyService = () => {
             >
               Add to your Calender
             </button>
+            {/* <br /> */}
           </div>
-          <div className="p-5 me-lg-5">
+          <div className="p-2 p-lg-5 me-lg-5 mb-5">
             <hr />
             <div className="">
               <span className="display-6">Sunday Service</span>
@@ -52,6 +53,7 @@ const WeeklyService = () => {
             >
               Add to your Calender
             </button>
+            {/* <br /> */}
           </div>
         </div>
       </div>

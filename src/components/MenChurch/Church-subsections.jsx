@@ -15,7 +15,7 @@ const ChurchSubsections = () => {
         <div className="col-3 offset-2">
           <img
             style={{ maxWidth: "100%", height: "auto" }}
-            className="rounded-4"
+            className="rounded-3"
             src={subsection1}
             alt=""
           />
@@ -45,7 +45,7 @@ const ChurchSubsections = () => {
         <div className="col-3">
           <img
             style={{ maxWidth: "100%" }}
-            className="rounded-4"
+            className="rounded-3"
             src={subsection2}
             alt=""
           />
@@ -79,7 +79,7 @@ const ChurchSubsections = () => {
         <div className="col-3">
           <img
             style={{ maxWidth: "100%" }}
-            className="rounded-4"
+            className="rounded-3"
             src={subsection3}
             alt=""
           />
