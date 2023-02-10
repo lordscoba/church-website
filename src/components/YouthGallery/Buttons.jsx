@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Buttons = () => {
   return (
@@ -7,36 +8,40 @@ const Buttons = () => {
       style={{ backgroundColor: "#474747" }}
     >
       <div className="col-3 col-lg-2 offset-lg-2">
-        <button
+        <Link
+          to={"/youth-church"}
           className="btn btn-outline-light rounded-2 text-nowrap w-100 p-lg-3"
           style={{ fontSize: "8px" }}
         >
           Youth Church
-        </button>
+        </Link>
       </div>
       <div className="col-3 col-lg-2">
-        <button
+        <Link
+          to={"/intercessors-church"}
           className="btn btn-outline-light rounded-2 text-nowrap w-100 p-lg-3 overflow-auto"
           style={{ fontSize: "8px" }}
         >
           Intercessors Fellowship
-        </button>
+        </Link>
       </div>
       <div className="col-3 col-lg-2">
-        <button
+        <Link
+          to={"/ladies-fellowship"}
           className="btn btn-outline-light rounded-2 text-nowrap w-100 p-lg-3 overflow-auto"
           style={{ fontSize: "8px" }}
         >
           Ladies Fellowship
-        </button>
+        </Link>
       </div>
       <div className="col-3 col-lg-2">
-        <button
+        <Link
+          to={"/family-church"}
           className="btn btn-outline-light rounded-2 text-nowrap w-100 p-lg-3"
           style={{ fontSize: "8px" }}
         >
           Family Church
-        </button>
+        </Link>
       </div>
     </div>
   );

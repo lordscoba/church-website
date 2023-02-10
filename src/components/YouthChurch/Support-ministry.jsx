@@ -1,5 +1,6 @@
 import React from "react";
 import { handLove } from "../../images";
+import { Link } from "react-router-dom";
 
 const SupportMinistry = () => {
   return (
@@ -22,9 +23,9 @@ const SupportMinistry = () => {
             and support. Every contribution, big or small, will make a
             difference.
           </p>
-          <button className="btn btn-outline-dark rounded-5">
+          <Link to={"/giving"} className="btn btn-outline-dark rounded-5">
             Give to our church
-          </button>
+          </Link>
         </div>
       </div>
     </section>

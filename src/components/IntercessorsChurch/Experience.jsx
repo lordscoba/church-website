@@ -1,5 +1,6 @@
 import React from "react";
 import { spiritualityHands } from "../../images";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const background_image = {
@@ -13,7 +14,7 @@ const Experience = () => {
     // backgroundAttachment: "fixed",
   };
   return (
-    <section className="" style={background_image}>
+    <section className="" style={background_image} id="experience">
       <div className="row py-3" style={{ height: "650px" }}>
         <div className="col-10 col-lg-6 align-self-center p-5">
           <h3>Experience the power of prayer and intercession in our Church</h3>
@@ -24,12 +25,18 @@ const Experience = () => {
             equipping sessions, special events, and more. Join us and experience
             the power of prayer.
           </p>
-          <button className="btn btn-outline-dark rounded-5 me-3 mb-3 mb-lg-0">
+          <Link
+            to={"/member"}
+            className="btn btn-outline-dark rounded-5 me-3 mb-3 mb-lg-0"
+          >
             Become a member
-          </button>
-          <button className="btn btn-outline-dark rounded-5">
+          </Link>
+          <Link
+            to={"/request-prayer"}
+            className="btn btn-outline-dark rounded-5"
+          >
             Request Prayer
-          </button>
+          </Link>
         </div>
       </div>
     </section>

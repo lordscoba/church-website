@@ -15,15 +15,15 @@ const Welcome = () => {
             Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
             adipiscing netus
           </p>
-          <button className="btn btn-outline-dark rounded-5">
+          <a href="#subsection" className="btn btn-outline-dark rounded-5">
             Worship with us
-          </button>
+          </a>
         </div>
         <div className="col-3 mb-5">
           <IconContext.Provider value={{ size: "30px" }}>
-            <Link className="text-light nav-link float-end me-2" to={"/"}>
+            <a href="#media" className="text-light nav-link float-end me-2">
               <AiOutlineDownCircle />
-            </Link>
+            </a>
           </IconContext.Provider>
         </div>
       </div>

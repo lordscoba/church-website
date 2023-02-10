@@ -30,7 +30,7 @@ const List = () => {
 
 const AllSermon = () => {
   return (
-    <div className="row g-1 p-2 p-lg-5">
+    <div className="row g-1 p-2 p-lg-5" id="allsermon">
       <h3 className="fw-light">All Sermons</h3>
       <div className="col-6 col-lg-4">
         <img className="img-fluid rounded-3" src={sermon} alt="sermon" />

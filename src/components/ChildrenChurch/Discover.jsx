@@ -1,6 +1,7 @@
 import React from "react";
 import { wavyBorderWhite, wavyBorderYellow } from "../../images";
 import { birdIcon, ropeIcon, sunIcon, heartIcon } from "../../images/icons";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
   const background_image = {
@@ -15,7 +16,7 @@ const Discover = () => {
     // backgroundAttachment: "fixed",
   };
   return (
-    <section className="py-5" style={background_image}>
+    <section className="py-5" style={background_image} id="discover">
       <div className="row p-3 p-lg-5" style={{ height: "600px" }}>
         <div className="col-2 col-lg-3">
           <div className="row h-100">
@@ -39,12 +40,15 @@ const Discover = () => {
             environment for children to explore their faith and make friends.
           </p>
           <div className="text-center">
-            <button className="btn btn-outline-dark rounded-5 me-2 mb-3 mb-md-0 mb-lg-0">
+            <Link
+              to={"/member"}
+              className="btn btn-outline-dark rounded-5 me-2 mb-3 mb-md-0 mb-lg-0"
+            >
               Become a member
-            </button>
-            <button className="btn btn-outline-dark rounded-5">
+            </Link>
+            <Link to={"/giving"} className="btn btn-outline-dark rounded-5">
               Support Church
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-2 col-lg-3">

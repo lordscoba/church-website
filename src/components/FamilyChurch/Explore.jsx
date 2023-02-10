@@ -21,7 +21,7 @@ const Text2 =
 
 const Explore = () => {
   return (
-    <section>
+    <section id="explore">
       <h2 className="text-center fst-italic p-4">
         Explore our collection of media resources
       </h2>

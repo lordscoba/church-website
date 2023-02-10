@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Members = () => {
   return (
@@ -16,7 +17,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Volunteer</h3>
-              <button
+              <Link
+                to={"/volunteer"}
                 type="button"
                 className="btn btn-outline-dark rounded-5"
                 style={{
@@ -26,7 +28,7 @@ export const Members = () => {
                 }}
               >
                 Start here
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -37,8 +39,9 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Give to the church</h3>
-              <button
-                type="button"
+              <Link
+                to={"/giving"}
+                // type="button"
                 className="btn btn-outline-dark rounded-5"
                 style={{
                   fontFamily: "satoshi",
@@ -47,7 +50,7 @@ export const Members = () => {
                 }}
               >
                 Give
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -58,7 +61,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Support church project</h3>
-              <button
+              <Link
+                to={"/giving"}
                 type="button"
                 className="btn btn-outline-dark rounded-5"
                 style={{
@@ -68,7 +72,7 @@ export const Members = () => {
                 }}
               >
                 Support
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -80,7 +84,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Become a member</h3>
-              <button
+              <Link
+                to={"/member"}
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{
@@ -90,7 +95,7 @@ export const Members = () => {
                 }}
               >
                 Start here
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -101,7 +106,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>View church photo gallery</h3>
-              <button
+              <Link
+                to={"/youth-gallery"}
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{
@@ -111,7 +117,7 @@ export const Members = () => {
                 }}
               >
                 Check Photos
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -122,7 +128,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Request prayer </h3>
-              <button
+              <Link
+                to={"/request-prayer "}
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{
@@ -132,7 +139,7 @@ export const Members = () => {
                 }}
               >
                 Send Request
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
@@ -143,7 +150,8 @@ export const Members = () => {
           <div className="p-3">
             <div className="d-flex justify-content-between p-2">
               <h3>Know about the church</h3>
-              <button
+              <Link
+                to={"/about"}
                 type="button"
                 className="btn btn-outline-dark rounded-5 text-nowrap"
                 style={{
@@ -153,7 +161,7 @@ export const Members = () => {
                 }}
               >
                 About Us
-              </button>
+              </Link>
             </div>
             <p className="p-2 w-75">
               Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales

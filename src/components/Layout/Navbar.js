@@ -37,12 +37,14 @@ function NavbarMenu() {
     <Navbar bg="bg-transparent" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img
-            src={foursquareLogo}
-            // style={{ width: "6vw" }}
-            height={50}
-            alt="fourSquare logo"
-          />
+          <Link to={"/"}>
+            <img
+              src={foursquareLogo}
+              // style={{ width: "6vw" }}
+              height={50}
+              alt="fourSquare logo"
+            />
+          </Link>
           {/* <Link to="/about">test about</Link> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

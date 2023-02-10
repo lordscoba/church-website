@@ -1,5 +1,6 @@
 import React from "react";
 import { prayerManBending } from "../../images";
+import { Link } from "react-router-dom";
 
 export const Events = () => {
   return (
@@ -23,13 +24,14 @@ export const Events = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-light rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="col-6 col-lg-4 p-1">
           <img
@@ -45,13 +47,14 @@ export const Events = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-light rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="col-6 col-lg-4 p-1">
           <img
@@ -67,24 +70,26 @@ export const Events = () => {
             Lorem ipsum dolor sit amet consectetur. At pellentesque facilisi
             massa vestibulum pretium
           </p>
-          <button
+          <Link
+            to={"/events-details"}
             type="button"
             className="btn btn-outline-light rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
       <div className="row my-3">
         <div className="col-4 mx-auto text-center">
-          <button
+          <Link
+            to={"/events"}
             type="button"
             className="btn btn-outline-light rounded-5 text-nowrap"
             style={{ fontFamily: "satoshi" }}
           >
             Check all Event
-          </button>
+          </Link>
         </div>
       </div>
     </section>

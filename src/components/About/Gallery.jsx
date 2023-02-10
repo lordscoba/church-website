@@ -2,6 +2,7 @@ import React from "react";
 import { peoplePraying } from "../../images";
 import { TbInfoSquare } from "react-icons/tb";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const background_image = {
@@ -33,13 +34,14 @@ const Gallery = () => {
             team of dedicated and passionate leaders are committed to serving
             our congregation and community with love and grace.
           </p>
-          <button
+          <Link
+            to={"/youth-gallery"}
             type="button"
             className="btn btn-outline-light rounded-5"
             style={{ fontFamily: "satoshi" }}
           >
             Explore Church Gallery
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -9,6 +9,7 @@ import {
   InterMedia7,
   InterMedia8,
 } from "../../images/gallery";
+import { Link } from "react-router-dom";
 
 const Title1 = "Youth Outreach Event";
 const Text1 =
@@ -52,7 +53,7 @@ export const MediaRow1 = ({
 }) => {
   return (
     <>
-      <div className="row px-3 px-lg-5 mb-1 g-1">
+      <div className="row px-3 px-lg-5 mb-1 g-1" id="media">
         <div className="col-8">
           <img
             className="img-fluid rounded-3 w-100 h-100"
@@ -72,16 +73,22 @@ export const MediaRow1 = ({
         <div className="col-4 d-none d-md-none d-lg-block p-5">
           <h5>{Title1}</h5>
           <p>{Text1}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div className="col-4 d-none d-md-block d-lg-none p-3">
           <h5>{Title1}</h5>
           <p style={{ fontSize: "13px" }}>{Text1}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div className="col-4 d-block d-md-none d-lg-none">
           <h5 style={{ fontSize: "10px" }} className="m-0">
@@ -90,12 +97,13 @@ export const MediaRow1 = ({
           <p style={{ fontSize: "6px" }} className="m-0 mb-1">
             {Text1}
           </p>
-          <button
+          <Link
+            to={"/youth-gallery"}
             style={{ fontSize: "7px", height: "22px" }}
             className="btn btn-outline-dark rounded-4 text-nowrap"
           >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div className="col-4">
           <img
@@ -147,16 +155,22 @@ export const MediaRow2 = ({
           <div className="col-7 d-none d-md-none d-lg-block p-5">
             <h5>{Title2}</h5>
             <p>{Text2}</p>
-            <button className="btn btn-outline-dark rounded-4">
+            <Link
+              to={"/youth-gallery"}
+              className="btn btn-outline-dark rounded-4"
+            >
               Explore collection
-            </button>
+            </Link>
           </div>
           <div className="col-7 d-none d-md-block d-lg-none p-3">
             <h5>{Title2}</h5>
             <p style={{ fontSize: "13px" }}>{Text2}</p>
-            <button className="btn btn-outline-dark rounded-4">
+            <Link
+              to={"/youth-gallery"}
+              className="btn btn-outline-dark rounded-4"
+            >
               Explore collection
-            </button>
+            </Link>
           </div>
           <div className="col-7 d-block d-md-none d-lg-none p-1">
             <h5 style={{ fontSize: "10px" }} className="m-0">
@@ -165,12 +179,13 @@ export const MediaRow2 = ({
             <p style={{ fontSize: "6px" }} className="m-0">
               {Text2}
             </p>
-            <button
+            <Link
+              to={"/youth-gallery"}
               style={{ fontSize: "7px", height: "22px" }}
               className="btn btn-outline-dark rounded-4 text-nowrap"
             >
               Explore collection
-            </button>
+            </Link>
           </div>
           <div className="col-5 p-1">
             <img
@@ -195,7 +210,8 @@ export const GalleryRow = () => {
         style={{ marginBottom: "-20px", zIndex: "10" }}
         className="col-6 col-md-5 col-lg-4 mx-auto text-center"
       >
-        <button
+        <Link
+          to={"/youth-gallery"}
           style={{
             background: "#FFFFFF",
             color: "#000000",
@@ -204,7 +220,7 @@ export const GalleryRow = () => {
           className="btn btn-outline-dark rounded-4 text-nowrap"
         >
           View all media collections
-        </button>
+        </Link>
       </div>
       <hr
         style={{

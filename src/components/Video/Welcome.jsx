@@ -18,13 +18,14 @@ const Welcome = () => {
             </button>
           </div>
           <div className="ms-3">
-            <button
+            <a
+              href="#allsermon"
               type="button"
               className="btn btn-outline-light rounded-2 text-nowrap"
               style={{ fontFamily: "satoshi", fontSize: "12px" }}
             >
               View More Sermons
-            </button>
+            </a>
           </div>
         </div>
         <div className="col-4">

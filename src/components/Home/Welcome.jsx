@@ -30,12 +30,9 @@ const Welcome = () => {
                 </div>
               </Slide>
               <Zoom>
-                <button
-                  type="button"
-                  className="btn btn-outline-light rounded-4"
-                >
+                <a href="#worship" className="btn btn-outline-light rounded-4">
                   Worship With Us
-                </button>
+                </a>
               </Zoom>
               <br />
             </div>

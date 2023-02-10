@@ -7,10 +7,11 @@ import {
   LadiesStash5,
   LadiesStash6,
 } from "../../images/gallery";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
   return (
-    <section style={{ backgroundColor: "#F4EEFD" }}>
+    <section style={{ backgroundColor: "#F4EEFD" }} id="discover">
       <div className="row g-2">
         <div className="col-10 col-md-7 col-lg-7 p-4 d-block d-md-none d-lg-none align-self-center">
           <h4>
@@ -33,18 +34,20 @@ const Discover = () => {
             relationship with God and serve others. We look forward to meeting
             you and growing together in faith and friendship.
           </p>
-          <button
+          <Link
+            to={"/member"}
             className="btn btn-outline-dark rounded-4 me-2"
             style={{ fontSize: "10px" }}
           >
             Become a member
-          </button>
-          <button
+          </Link>
+          <Link
+            to={"/giving"}
             className="btn btn-outline-dark rounded-4"
             style={{ fontSize: "10px" }}
           >
             Support the church
-          </button>
+          </Link>
         </div>
         <div className="col-10 col-md-7 col-lg-7 p-4 d-none d-md-block d-lg-block p-1 p-lg-5 align-self-center">
           <h1 className="p-1 p-lg-3">
@@ -68,12 +71,15 @@ const Discover = () => {
             you and growing together in faith and friendship.
           </p>
           <div className="my-5 p-1 p-lg-3">
-            <button className="btn btn-outline-dark rounded-4  me-2">
+            <Link
+              to={"/member"}
+              className="btn btn-outline-dark rounded-4  me-2"
+            >
               Become a member
-            </button>
-            <button className="btn btn-outline-dark rounded-4">
+            </Link>
+            <Link to={"/giving"} className="btn btn-outline-dark rounded-4">
               Support the church
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-3 d-none d-md-block d-lg-block">

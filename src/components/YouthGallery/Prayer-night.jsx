@@ -27,36 +27,36 @@ const PrayerNight = () => {
           </p>
         </div>
         <div className="col-12 col-lg-3 text-center p-1 p-lg-2">
-          <button className="btn btn-outline-dark rounded-4">
+          <a href="#prayer-explore" className="btn btn-outline-dark rounded-4">
             Explore collection
-          </button>
+          </a>
         </div>
       </div>
-      <div className="row g-1 my-1">
+      <div className="row g-1 my-1" id="prayer-explore">
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight1}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight2}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight3}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight4}
             alt=""
           />
@@ -65,28 +65,28 @@ const PrayerNight = () => {
       <div className="row g-1 my-1">
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight5}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight6}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight7}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={PrayerNight8}
             alt=""
           />

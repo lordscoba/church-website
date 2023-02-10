@@ -5,6 +5,7 @@ import {
   experience2,
   experience3,
 } from "../../images";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const background_image = {
@@ -40,7 +41,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="text-white" style={background_image}>
+    <section className="text-white" style={background_image} id="experience">
       <div className="row p-5">
         <div className="col-12 col-lg-6 p-2">
           <h4 className="display-5">
@@ -56,12 +57,13 @@ const Experience = () => {
             to providing a safe and fun environment for teens to explore their
             spirituality. Join us today and grow in your faith with other teens.
           </p>
-          <button
+          <Link
+            to={"/member"}
             className="btn rounded-5 text-white"
             style={{ backgroundColor: "#FF8E00" }}
           >
             Become a member
-          </button>
+          </Link>
         </div>
       </div>
       <div className="row">

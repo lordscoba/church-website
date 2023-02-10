@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { foursquareLogo } from "../../images";
 import { footer3, footer4, footer5 } from "../../images/icons";
 import Container from "react-bootstrap/Container";
@@ -20,44 +20,52 @@ const Footer = () => {
       <div className="row text-white p-4">
         <div className="col-12 col-md-4 col-lg-4 mb-4 mb-md-0">
           <div className="">
-            <img
-              className="img-fluid"
-              src={foursquareLogo}
-              alt="fourSquare logo"
-            />
+            <Link to={"/"}>
+              <img
+                className="img-fluid"
+                src={foursquareLogo}
+                alt="fourSquare logo"
+              />
+            </Link>
           </div>
         </div>
         <div className="col-12 col-md-8 col-lg-8 ms-auto">
           <div className="hstack g-3  float-start float-lg-end">
             <div className="text-nowrap mx-1">
-              <p style={{ fontSize: "12px" }}>
-                <img
-                  style={{ maxWidth: "30px" }}
-                  src={footer5}
-                  alt="footerImage"
-                />{" "}
-                &nbsp; GIVING
-              </p>
+              <Link className="nav-link" to={"/giving"}>
+                <p style={{ fontSize: "12px" }}>
+                  <img
+                    style={{ maxWidth: "30px" }}
+                    src={footer5}
+                    alt="footerImage"
+                  />{" "}
+                  &nbsp; GIVING
+                </p>
+              </Link>
             </div>
             <div className="text-nowrap mx-1">
-              <p style={{ fontSize: "12px" }}>
-                <img
-                  tyle={{ maxWidth: "25px" }}
-                  src={footer4}
-                  alt="footerImage"
-                />{" "}
-                &nbsp;PRAYER REQUEST
-              </p>
+              <Link className="nav-link" to={"/request-prayer"}>
+                <p style={{ fontSize: "12px" }}>
+                  <img
+                    tyle={{ maxWidth: "25px" }}
+                    src={footer4}
+                    alt="footerImage"
+                  />{" "}
+                  &nbsp;PRAYER REQUEST
+                </p>
+              </Link>
             </div>
             <div className="text-nowrap mx-1">
-              <p style={{ fontSize: "12px" }}>
-                <img
-                  tyle={{ maxWidth: "25px" }}
-                  src={footer3}
-                  alt="footerImage"
-                />{" "}
-                &nbsp;GET INVOLVED
-              </p>
+              <Link className="nav-link" to={"/member"}>
+                <p style={{ fontSize: "12px" }}>
+                  <img
+                    tyle={{ maxWidth: "25px" }}
+                    src={footer3}
+                    alt="footerImage"
+                  />{" "}
+                  &nbsp;GET INVOLVED
+                </p>
+              </Link>
             </div>
           </div>
         </div>
@@ -84,42 +92,106 @@ const FooterDetails = () => {
         <h4>Ministries</h4>
         <hr style={{ color: "white" }} className="mt-0 me-5 ms-0 ps-0" />
         <ul style={{ listStyleType: "none" }} className="ps-0 ms-0">
-          <li>Youth Church</li>
-          <li>Intercessors Fellowship</li>
-          <li>Family Church</li>
-          <li>Ladies Fellowship</li>
-          <li>Online Church</li>
+          <li>
+            <Link className="nav-link" to={"/youth-church"}>
+              Youth Church
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/intercessors-church"}>
+              Intercessors Fellowship
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/family-church"}>
+              Family Church{" "}
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/ladies-fellowship"}>
+              Ladies Fellowship
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/fellowship"}>
+              Online Church
+            </Link>
+          </li>
         </ul>
       </Col>
       <Col sm={6} md={4} lg={3}>
         <h4>About Us</h4>
         <hr style={{ color: "white" }} className="mt-0 me-5 ms-0 ps-0" />
         <ul style={{ listStyleType: "none" }} className="ps-0 ms-0">
-          <li>Our Mission and Visions</li>
-          <li>Our Weekly services</li>
-          <li>Meet Our Pastors</li>
-          <li>Locate Us</li>
+          <li>
+            <Link className="nav-link" to={"/about#vibrant"}>
+              Our Mission and Visions
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/about"}>
+              Our Weekly services
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/about"}>
+              Meet Our Pastors
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/about"}>
+              Locate Us
+            </Link>
+          </li>
         </ul>
         <h4>Media</h4>
         <hr style={{ color: "white" }} className="mt-0 me-5 ms-0 ps-0" />
         <ul style={{ listStyleType: "none" }} className="ps-0 ms-0">
-          <li>Watch Sermons </li>
-          <li>Listen to Podcast</li>
-          <li>Tour Church Gallery</li>
+          <li>
+            <Link className="nav-link" to={"/video"}>
+              Watch Sermons
+            </Link>{" "}
+          </li>
+          <li>
+            <Link className="nav-link" to={"/video"}>
+              Listen to Podcast
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/youth-gallery"}>
+              Tour Church Gallery
+            </Link>
+          </li>
         </ul>
       </Col>
       <Col sm={6} md={4} lg={3}>
         <h4>Events</h4>
         <hr style={{ color: "white" }} className="mt-0 me-5 ms-0 ps-0" />
         <ul style={{ listStyleType: "none" }} className="ps-0 ms-0">
-          <li>Upcoming Event</li>
+          <li>
+            <Link className="nav-link" to={"/events"}>
+              Upcoming Event
+            </Link>
+          </li>
         </ul>
         <h4>Get Involved</h4>
         <hr style={{ color: "white" }} className="mt-0 me-5 ms-0 ps-0" />
         <ul style={{ listStyleType: "none" }} className="ps-0 ms-0">
-          <li>Volunteer</li>
-          <li>Become a member</li>
-          <li>Become a Worker</li>
+          <li>
+            <Link className="nav-link" to={"/volunteer"}>
+              Volunteer
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/member"}>
+              Become a member
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to={"/member"}>
+              Become a Worker
+            </Link>
+          </li>
         </ul>
       </Col>
       <Col sm={6} md={4} lg={3}>

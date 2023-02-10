@@ -6,10 +6,15 @@ import {
   subsection4,
 } from "../../images";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const ChurchSubsections = () => {
   return (
-    <section className="p-4" style={{ backgroundColor: "#ECF5FF" }}>
+    <section
+      className="p-4"
+      style={{ backgroundColor: "#ECF5FF" }}
+      id="subsection"
+    >
       <h4 className="text-center my-4 display-6">Church subsections</h4>
       <div className="row d-flex g-1">
         <div className="col-3 offset-2">
@@ -21,15 +26,17 @@ const ChurchSubsections = () => {
           />
 
           <div className="d-none d-md-block d-lg-block">
-            <button
+            <Link
+              to={"/teens-church"}
               style={{ marginTop: "-200px", zIndex: "10" }}
               className="btn btn-primary rounded-start rounded-4 text-nowrap"
             >
               Teens <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
           <div className="d-block d-md-none d-lg-none">
-            <button
+            <Link
+              to={"/teens-church"}
               style={{
                 marginTop: "-150px",
                 zIndex: "10",
@@ -39,7 +46,7 @@ const ChurchSubsections = () => {
               className="btn btn-primary rounded-start rounded-4 text-nowrap"
             >
               Teens <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-3">
@@ -50,7 +57,8 @@ const ChurchSubsections = () => {
             alt=""
           />
           <div className="d-none d-md-block d-lg-block">
-            <button
+            <Link
+              to={"/adult-church"}
               style={{
                 marginTop: "-200px",
                 zIndex: "10",
@@ -59,10 +67,11 @@ const ChurchSubsections = () => {
               className="btn rounded-start rounded-4 text-nowrap text-white"
             >
               Adult <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
           <div className="d-block d-md-none d-lg-none">
-            <button
+            <Link
+              to={"/adult-church"}
               style={{
                 marginTop: "-150px",
                 zIndex: "10",
@@ -73,7 +82,7 @@ const ChurchSubsections = () => {
               className="btn rounded-start rounded-4 text-nowrap text-white"
             >
               Adult <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-3">
@@ -84,7 +93,8 @@ const ChurchSubsections = () => {
             alt=""
           />
           <div className="d-none d-md-block d-lg-block">
-            <button
+            <Link
+              to={"/children-church"}
               style={{
                 marginTop: "-200px",
                 zIndex: "10",
@@ -93,10 +103,11 @@ const ChurchSubsections = () => {
               className="btn rounded-start rounded-4 text-nowrap text-white"
             >
               Children <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
           <div className="d-block d-md-none d-lg-none">
-            <button
+            <Link
+              to={"/children-church"}
               style={{
                 marginTop: "-150px",
                 zIndex: "10",
@@ -107,43 +118,9 @@ const ChurchSubsections = () => {
               className="btn rounded-start rounded-4 text-nowrap text-white"
             >
               Children <IoIosArrowForward />
-            </button>
+            </Link>
           </div>
         </div>
-        {/* <div className="col-2">
-          <img
-            style={{ maxWidth: "100%" }}
-            className="rounded-4"
-            src={subsection4}
-            alt=""
-          />
-          <div className="d-none d-md-block d-lg-block">
-            <button
-              style={{
-                marginTop: "-200px",
-                zIndex: "10",
-                background: "#9747FF",
-              }}
-              className="btn rounded-start rounded-4 text-nowrap text-white"
-            >
-              CFM <IoIosArrowForward />
-            </button>
-          </div>
-          <div className="d-block d-md-none d-lg-none">
-            <button
-              style={{
-                marginTop: "-150px",
-                zIndex: "10",
-                fontSize: "6px",
-                height: "25px",
-                background: "#9747FF",
-              }}
-              className="btn btn-primary rounded-start rounded-4 text-nowrap text-white"
-            >
-              CFM <IoIosArrowForward />
-            </button>
-          </div>
-        </div> */}
       </div>
     </section>
   );

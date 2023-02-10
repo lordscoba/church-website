@@ -1,5 +1,6 @@
 import React from "react";
 import { meetPastor } from "../../images";
+import { Link } from "react-router-dom";
 
 const MeetPastors = () => {
   return (
@@ -19,9 +20,9 @@ const MeetPastors = () => {
             in the world. We believe that every person has a unique purpose and
             we want to help you discover and live out that purpose.
           </p>
-          <button className="btn btn-outline-dark rounded-5">
+          <Link to={"/about"} className="btn btn-outline-dark rounded-5">
             Contact Pastor
-          </button>
+          </Link>
         </div>
         <div className="col p-4 p-lg-5">
           <img

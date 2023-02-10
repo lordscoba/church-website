@@ -1,5 +1,6 @@
 import React from "react";
 import { OutputIcon1, OutputIcon2, OutputIcon3 } from "../../images/icons";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -24,12 +25,13 @@ const Welcome = () => {
                 Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
                 adipiscing netus sapien enim etiam sit. Proin
               </p>
-              <button
+              <Link
+                to={"/intercessors-church"}
                 style={{ fontSize: "9px" }}
                 className="btn btn-outline-light rounded-5"
               >
                 Visits church
-              </button>
+              </Link>
             </div>
             <div className="col-6">
               <div className="d-flex">
@@ -48,12 +50,13 @@ const Welcome = () => {
                 Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
                 adipiscing netus sapien enim etiam sit. Proin
               </p>
-              <button
+              <Link
+                to={"/youth-church"}
                 style={{ fontSize: "9px" }}
                 className="btn btn-outline-light rounded-5"
               >
                 Visits church
-              </button>
+              </Link>
             </div>
             <div className="col-6">
               <div className="d-flex">
@@ -72,12 +75,13 @@ const Welcome = () => {
                 Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
                 adipiscing netus sapien enim etiam sit. Proin
               </p>
-              <button
+              <Link
+                to={"/family-church"}
                 style={{ fontSize: "9px" }}
                 className="btn btn-outline-light rounded-5"
               >
                 Visits church
-              </button>
+              </Link>
             </div>
             <div className="col-6">
               <div className="d-flex">
@@ -96,12 +100,13 @@ const Welcome = () => {
                 Lorem ipsum dolor sit amet consectetur. Eu donec feugiat sodales
                 adipiscing netus sapien enim etiam sit. Proin
               </p>
-              <button
+              <Link
+                to={"/ladies-fellowship"}
                 style={{ fontSize: "9px" }}
                 className="btn btn-outline-light rounded-5"
               >
                 Visits church
-              </button>
+              </Link>
             </div>
           </div>
         </div>

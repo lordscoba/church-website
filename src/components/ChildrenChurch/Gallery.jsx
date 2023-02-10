@@ -30,7 +30,7 @@ const Gallery = () => {
     // backgroundAttachment: "fixed",
   };
   return (
-    <section>
+    <section id="gallery">
       <div className="py-5" style={background_image}>
         <h2 className="text-center fst-italic p-4">Children Gallery</h2>
         <MediaRow1

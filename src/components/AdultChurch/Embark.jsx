@@ -1,5 +1,6 @@
 import React from "react";
 import { vectorBlock, playfulCouple } from "../../images";
+import { Link } from "react-router-dom";
 
 const Embark = () => {
   const background_image = {
@@ -13,7 +14,7 @@ const Embark = () => {
   };
 
   return (
-    <section style={background_image}>
+    <section style={background_image} id="embark">
       <div className="row text-white">
         <div className="col-10 col-lg-6 p-4 align-self-center">
           <h4>
@@ -30,12 +31,15 @@ const Embark = () => {
             bigger.
           </p>
           <div className="d-flex">
-            <button className="btn btn-dark rounded-5 p-2 me-1">
+            <Link to={"/member"} className="btn btn-dark rounded-5 p-2 me-1">
               Become a member
-            </button>
-            <button className="btn btn-outline-light rounded-5 p-2">
+            </Link>
+            <Link
+              to={"/request-prayer"}
+              className="btn btn-outline-light rounded-5 p-2"
+            >
               Request Prayer
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col text-right">

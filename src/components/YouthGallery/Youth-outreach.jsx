@@ -27,36 +27,39 @@ const YouthOutreach = () => {
           </p>
         </div>
         <div className="col-12 col-lg-2 text-center p-1 p-lg-2">
-          <button className="btn btn-outline-dark rounded-4">
+          <a
+            href="#outreach-explore"
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </a>
         </div>
       </div>
-      <div className="row g-1 my-1">
+      <div className="row g-1 my-1" id="outreach-explore">
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent1}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent2}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent3}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent4}
             alt=""
           />
@@ -65,28 +68,28 @@ const YouthOutreach = () => {
       <div className="row g-1 my-1">
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent5}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent6}
             alt=""
           />
         </div>
         <div className="col-4">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent7}
             alt=""
           />
         </div>
         <div className="col-2">
           <img
-            className="img-fluid w-100 h-100 rounded-3"
+            className="img-fluid w-100 h-100 rounded-3 object-fit-cover"
             src={YouthEvent8}
             alt=""
           />

@@ -8,6 +8,7 @@ import {
   YouthStash6,
   YouthStash7,
 } from "../../images/gallery";
+import { Link } from "react-router-dom";
 
 const MemberPage = () => {
   return (
@@ -20,7 +21,7 @@ const MemberPage = () => {
 const Row1 = () => {
   return (
     <>
-      <div className="row g-4 py-5">
+      <div className="row g-4 py-5" id="member">
         <div className="text-white col-12 col-md-6 col-lg-6 px-5">
           <h3 className="display-4 fst-italic">
             Welcome to the youth ministry at our church!
@@ -33,12 +34,12 @@ const Row1 = () => {
             We believe that God has a unique purpose for each of our lives, and
             we want to help you discover and live out that purpose.
           </p>
-          <button className="btn btn-outline-light rounded-5 me-3">
+          <Link to={"/member"} className="btn btn-outline-light rounded-5 me-3">
             Become a member
-          </button>
-          <button className="btn btn-outline-light rounded-5">
+          </Link>
+          <Link to={"/giving"} className="btn btn-outline-light rounded-5">
             Support Us
-          </button>
+          </Link>
         </div>
       </div>
       <div className="row g-1">

@@ -1,10 +1,11 @@
 import React from "react";
 import { doveIcon, churchIcon, eyeIcon } from "../../images/icons";
+import { Link, useLocation } from "react-router-dom";
 
 const Vibrant = () => {
   return (
     <section>
-      <div className="row p-lg-5">
+      <div className="row p-lg-5" id="vibrant">
         <div className="col-12 col-lg-6 p-5">
           <p className="fst-italic display-4">
             We are a vibrant and welcoming community of believers who are

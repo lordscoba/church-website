@@ -6,10 +6,11 @@ import {
   ellipseRed,
   ellipseBlue,
 } from "../../images";
+import { Link } from "react-router-dom";
 
 export const Worship = () => {
   return (
-    <section className="mb-5">
+    <section className="mb-5" id="worship">
       <div className="row">
         <div className="col-12 col-lg-5 p-5">
           <h1 className="p-3">
@@ -23,20 +24,21 @@ export const Worship = () => {
             ullamcorper. Bibendum at vitae tristique viverra massa{" "}
           </p>
           <div className=" p-2">
-            <button
-              type="button"
+            <Link
+              to={"/member"}
               className="btn btn-outline-dark rounded-4 mx-1 text-nowrap my-1"
               style={{ fontFamily: "satoshi" }}
             >
               Become a member
-            </button>
-            <button
+            </Link>
+            <Link
+              to={"/youth-gallery"}
               type="button"
               className="btn btn-outline-dark rounded-4 me-2 my-1 text-nowrap float-none float-md-end float-lg-end"
               style={{ fontFamily: "satoshi" }}
             >
               Explore our gallery
-            </button>
+            </Link>
           </div>
         </div>
         <div

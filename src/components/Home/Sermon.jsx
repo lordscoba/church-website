@@ -1,6 +1,7 @@
 import React from "react";
 import { prayerManStanding, singer, viewAll } from "../../images";
 import { RiVoiceprintFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Sermon = () => {
   const background = {
@@ -75,11 +76,13 @@ const Sermon = () => {
             className="img-fluid d-none d-md-block d-lg-none rounded-3 mt-0 pt-0"
             src={viewAll}
           />
-          <img
-            style={{ width: "auto", height: "13rem" }}
-            className="img-fluid d-none d-md-none d-lg-block rounded-3 mt-0 pt-0"
-            src={viewAll}
-          />
+          <Link to={"/video"}>
+            <img
+              style={{ width: "auto", height: "13rem" }}
+              className="img-fluid d-none d-md-none d-lg-block rounded-3 mt-0 pt-0"
+              src={viewAll}
+            />
+          </Link>
           <div></div>
         </div>
       </div>

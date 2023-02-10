@@ -9,6 +9,7 @@ import {
   YouthMedia7,
   YouthMedia8,
 } from "../../images/gallery";
+import { Link } from "react-router-dom";
 
 import { titleVector, vectorFine } from "../../images";
 
@@ -40,7 +41,7 @@ const Gallery = () => {
     transform: "rotate(-3.38deg)",
   };
   return (
-    <section className="mx-2 mx-lg-5">
+    <section className="mx-2 mx-lg-5" id="gallery">
       <br />
       <br />
       <div className="row my-5">
@@ -111,9 +112,12 @@ export const MediaRow1 = ({
         >
           <h5>{Title1}</h5>
           <p>{Text1}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div
           style={vector_image}
@@ -121,9 +125,12 @@ export const MediaRow1 = ({
         >
           <h5>{Title1}</h5>
           <p style={{ fontSize: "13px" }}>{Text1}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div
           style={vector_image}
@@ -135,12 +142,13 @@ export const MediaRow1 = ({
           <p style={{ fontSize: "6px" }} className="m-0 mb-1">
             {Text1}
           </p>
-          <button
+          <Link
+            to={"/youth-gallery"}
             style={{ fontSize: "7px", height: "22px" }}
             className="btn btn-outline-dark rounded-4 text-nowrap"
           >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div className="col-4">
           <img
@@ -198,9 +206,12 @@ export const MediaRow2 = ({
         >
           <h5>{Title2}</h5>
           <p>{Text2}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div
           style={vector_image}
@@ -208,9 +219,12 @@ export const MediaRow2 = ({
         >
           <h5>{Title2}</h5>
           <p style={{ fontSize: "13px" }}>{Text2}</p>
-          <button className="btn btn-outline-dark rounded-4">
+          <Link
+            to={"/youth-gallery"}
+            className="btn btn-outline-dark rounded-4"
+          >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div
           style={vector_image}
@@ -222,12 +236,13 @@ export const MediaRow2 = ({
           <p style={{ fontSize: "6px" }} className="m-0 mb-1">
             {Text2}
           </p>
-          <button
+          <Link
+            to={"/youth-gallery"}
             style={{ fontSize: "7px", height: "22px" }}
             className="btn btn-outline-dark rounded-4 text-nowrap"
           >
             Explore collection
-          </button>
+          </Link>
         </div>
         <div className="col-4">
           <img
@@ -257,7 +272,8 @@ export const GalleryRow = () => {
         style={{ marginBottom: "-20px", zIndex: "10" }}
         className="col-6 col-md-5 col-lg-4 mx-auto text-center"
       >
-        <button
+        <Link
+          to={"/youth-gallery"}
           style={{
             background: "#474747",
             // color: "#000000",
@@ -266,7 +282,7 @@ export const GalleryRow = () => {
           className="btn btn-outline-light rounded-4 text-nowrap"
         >
           View all media collections
-        </button>
+        </Link>
       </div>
       <hr
         style={{

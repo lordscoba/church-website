@@ -49,12 +49,13 @@ const Ways = () => {
               any additional assets such as vehicles or real estate etc.
             </p>
             <div align="center">
-              <button
-                className=" btn rounded-4"
+              <Link
+                to={"/giving-online"}
+                className="btn rounded-4"
                 style={{ backgroundColor: "#9747FF" }}
               >
                 Give Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -73,12 +74,13 @@ const Ways = () => {
               any additional assets such as vehicles or real estate etc.
             </p>
             <div align="center">
-              <button
+              <Link
+                to={"/giving-online"}
                 className=" btn rounded-4"
                 style={{ backgroundColor: "#9747FF" }}
               >
                 Give Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

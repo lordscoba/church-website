@@ -20,7 +20,7 @@ const Text2 =
 
 const Media = () => {
   return (
-    <section>
+    <section id="media">
       <h2 className="text-center fst-italic p-4">Our Media Collections</h2>
       <MediaRow1
         Image1={InterMedia1}
