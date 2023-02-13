@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import {
@@ -30,8 +30,22 @@ import {
   ChildrenChurch,
   YouthGallery,
 } from "./screens/Church";
+import Preloader from "./components/Preloader";
 
 const App = () => {
+  const [showPreloader, setShowPreloader] = useState(true);
+
+  useEffect(() => {
+    let timeout;
+
+    setTimeout(() => {
+      setShowPreloader(false);
+    }, 4000);
+  }, []);
+
+  if (showPreloader) {
+    return <Preloader />;
+  }
   return (
     <BrowserRouter>
       <Layout>
