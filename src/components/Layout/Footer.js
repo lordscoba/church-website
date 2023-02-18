@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-12 col-md-8 col-lg-8 ms-auto">
-          <div className="hstack g-3  float-start float-lg-end">
+          <div className="d-grid d-md-flex d-lg-flex float-start float-lg-end">
             <div className="text-nowrap mx-1">
               <Link className="nav-link" to={"/giving"}>
                 <p style={{ fontSize: "12px" }}>
